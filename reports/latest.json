@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "date": "2026-10-17",
-  "generatedAt": "2026-10-17T00:33:07.073Z",
-  "reportPath": "reports/provider-free-model-audit-2026-10-17.md",
+  "date": "2026-10-18",
+  "generatedAt": "2026-10-18T00:05:48.823Z",
+  "reportPath": "reports/provider-free-model-audit-2026-10-18.md",
   "totalModels": 95,
   "providers": [
     {
@@ -644,47 +644,9 @@
     }
   ],
   "changes": {
-    "comparedWith": "2026-10-16",
-    "added": [
-      {
-        "provider": "openrouter",
-        "id": "xingchen-agi/xing4.0-29b-a4b:free",
-        "displayName": "XingChen: Xing4.0 29B A4B (free)",
-        "contextWindow": 262144
-      },
-      {
-        "provider": "opencode",
-        "id": "opencode:beam-free",
-        "displayName": "beam-free",
-        "contextWindow": 1048576
-      },
-      {
-        "provider": "opencode",
-        "id": "opencode:glm-5.3-flash-free",
-        "displayName": "glm-5.3-flash-free",
-        "contextWindow": 200000
-      }
-    ],
-    "removed": [
-      {
-        "provider": "opencode",
-        "id": "opencode:cat-jam-free",
-        "displayName": "cat-jam-free",
-        "contextWindow": 1048576
-      },
-      {
-        "provider": "opencode",
-        "id": "opencode:muse-spark-1.2-contributor-free",
-        "displayName": "muse-spark-1.2-contributor-free",
-        "contextWindow": 1048576
-      },
-      {
-        "provider": "opencode",
-        "id": "opencode:muse-spark-1.3-contributor-free",
-        "displayName": "muse-spark-1.3-contributor-free",
-        "contextWindow": 1048576
-      }
-    ],
+    "comparedWith": "2026-10-17",
+    "added": [],
+    "removed": [],
     "comparedProviders": [
       "openrouter",
       "zhipu",
