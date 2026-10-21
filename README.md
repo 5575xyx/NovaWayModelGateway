@@ -33,7 +33,7 @@
 
 <!-- AUDIT-SUMMARY-START -->
 
-> **目录审计于 2026-10-20（Asia/Shanghai）更新：93 个免费模型入口，覆盖 13/15 个 Provider。** 这里统计的是通过免费规则过滤的 Provider 模型入口，同一模型出现在多个 Provider 时会分别计数；本次未发送真实推理请求。
+> **目录审计于 2026-10-21（Asia/Shanghai）更新：95 个免费模型入口，覆盖 13/15 个 Provider。** 这里统计的是通过免费规则过滤的 Provider 模型入口，同一模型出现在多个 Provider 时会分别计数；本次未发送真实推理请求。
 
 > 未配置密钥：Google Gemini、GitHub Models。
 
@@ -48,36 +48,34 @@
 | GitHub Models            | ⚪ 未接入 |     未接入 | 原型开发额度             |
 | Cohere                   | 🟢 正常   |          1 | 免费 Trial/Production    |
 | Hugging Face             | 🟢 正常   |          2 | 实时零价端点             |
-| SenseNova                | 🟢 正常   |          3 | 实时零价模型             |
+| SenseNova                | 🟢 正常   |          6 | 实时零价模型             |
 | Baidu Qianfan            | 🟢 正常   |          0 | 官方免费白名单交集       |
-| Kilo Code                | 🟢 正常   |         18 | 聚合免费模型             |
+| Kilo Code                | 🟢 正常   |         17 | 聚合免费模型             |
 | Agnes AI (China)         | 🟢 正常   |          5 | 官方免费模型             |
 | Agnes AI (International) | 🟢 正常   |          6 | 官方免费模型             |
 | OpenCode Zen             | 🟢 正常   |          9 | 实时零价模型（匿名通道） |
 
-[查看稳定的完整免费模型清单](FREE_MODELS.md) · [查看本次目录审计报告](reports/provider-free-model-audit-2026-10-20.md)
+[查看稳定的完整免费模型清单](FREE_MODELS.md) · [查看本次目录审计报告](reports/provider-free-model-audit-2026-10-21.md)
 
 ### 今日变化
 
-与 2026-10-19 相比，在成功比较的 13 个 Provider 中：**新增 3 个，移除 5 个**。
+与 2026-10-20 相比，在成功比较的 13 个 Provider 中：**新增 4 个，移除 2 个**。
 
 <details>
-<summary>查看新增的 3 个模型</summary>
-
-- `openrouter:minimax/minimax-m3.1-flash:free`
-- `sensenova:sensenova-6.7-flash-lite`
-- `opencode:opencode:minimax-m3.1-flash-free`
-
-</details>
-
-<details>
-<summary>查看移除的 5 个模型</summary>
+<summary>查看新增的 4 个模型</summary>
 
 - `sensenova:deepseek-flash`
 - `sensenova:deepseek-v4.1-flash`
 - `sensenova:kimi-k3`
 - `sensenova:sensenova-6.8-flash-lite`
-- `opencode:opencode:space-bunny-free`
+
+</details>
+
+<details>
+<summary>查看移除的 2 个模型</summary>
+
+- `sensenova:sensenova-6.7-flash-lite`
+- `kilo:thinkingmachines/inkling-small:free`
 
 </details>
 
@@ -178,11 +176,14 @@
 </details>
 
 <details>
-<summary><strong>SenseNova · 3 个模型</strong></summary>
+<summary><strong>SenseNova · 6 个模型</strong></summary>
 
-- `sensenova:deepseek-v4-flash` — DeepSeek V4 Flash (SenseNova)
-- `sensenova:glm-5.2` — GLM-5.2 (SenseNova)
-- `sensenova:sensenova-6.7-flash-lite` — SenseNova 6.7 Flash-Lite
+- `sensenova:deepseek-flash`
+- `sensenova:deepseek-v4-flash`
+- `sensenova:deepseek-v4.1-flash`
+- `sensenova:glm-5.2`
+- `sensenova:kimi-k3`
+- `sensenova:sensenova-6.8-flash-lite`
 
 </details>
 
@@ -194,7 +195,7 @@
 </details>
 
 <details>
-<summary><strong>Kilo Code · 18 个模型</strong></summary>
+<summary><strong>Kilo Code · 17 个模型</strong></summary>
 
 - `kilo:cohere/north-mini-code:free` — Cohere: North Mini Code (free)
 - `kilo:dots-studio/dots-3-note-preview:free` — Dots Studio: Dots3-Note Preview (free)
@@ -213,7 +214,6 @@
 - `kilo:openrouter/pareto-code` — OpenRouter Pareto Code Router
 - `kilo:poolside/laguna-s-2.1:free` — Poolside: Laguna S 2.1 (free)
 - `kilo:poolside/laguna-xs-2.1:free` — Poolside: Laguna XS 2.1 (free)
-- `kilo:thinkingmachines/inkling-small:free` — Thinking Machines: Inkling Small (free)
 
 </details>
 

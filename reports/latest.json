@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
-  "date": "2026-10-20",
-  "generatedAt": "2026-10-20T01:07:01.991Z",
-  "reportPath": "reports/provider-free-model-audit-2026-10-20.md",
-  "totalModels": 93,
+  "date": "2026-10-21",
+  "generatedAt": "2026-10-21T00:40:16.681Z",
+  "reportPath": "reports/provider-free-model-audit-2026-10-21.md",
+  "totalModels": 95,
   "providers": [
     {
       "id": "openrouter",
@@ -366,24 +366,39 @@
       "id": "sensenova",
       "display": "SenseNova",
       "status": "ok",
-      "count": 3,
+      "count": 6,
       "freeType": "实时零价模型",
       "freeBasis": "实时目录中输入、输出价格都为 0 的文本模型；接口不可用时使用审核过的免费清单",
       "risk": "免费配额和型号可能变化；当前网关只处理文本，即使模型本身支持多模态",
       "models": [
         {
+          "id": "deepseek-flash",
+          "displayName": "deepseek-flash",
+          "contextWindow": null
+        },
+        {
           "id": "deepseek-v4-flash",
-          "displayName": "DeepSeek V4 Flash (SenseNova)",
+          "displayName": "deepseek-v4-flash",
+          "contextWindow": null
+        },
+        {
+          "id": "deepseek-v4.1-flash",
+          "displayName": "deepseek-v4.1-flash",
           "contextWindow": null
         },
         {
           "id": "glm-5.2",
-          "displayName": "GLM-5.2 (SenseNova)",
+          "displayName": "glm-5.2",
           "contextWindow": null
         },
         {
-          "id": "sensenova-6.7-flash-lite",
-          "displayName": "SenseNova 6.7 Flash-Lite",
+          "id": "kimi-k3",
+          "displayName": "kimi-k3",
+          "contextWindow": null
+        },
+        {
+          "id": "sensenova-6.8-flash-lite",
+          "displayName": "sensenova-6.8-flash-lite",
           "contextWindow": null
         }
       ]
@@ -402,7 +417,7 @@
       "id": "kilo",
       "display": "Kilo Code",
       "status": "ok",
-      "count": 18,
+      "count": 17,
       "freeType": "聚合免费模型",
       "freeBasis": "白名单 + 零价格双重验证，覆盖 17+ 个免费模型",
       "risk": "免费层约 200 请求/小时；部分模型与 OpenRouter 重叠",
@@ -491,11 +506,6 @@
           "id": "poolside/laguna-xs-2.1:free",
           "displayName": "Poolside: Laguna XS 2.1 (free)",
           "contextWindow": 262144
-        },
-        {
-          "id": "thinkingmachines/inkling-small:free",
-          "displayName": "Thinking Machines: Inkling Small (free)",
-          "contextWindow": 1048576
         }
       ]
     },
@@ -634,28 +644,8 @@
     }
   ],
   "changes": {
-    "comparedWith": "2026-10-19",
+    "comparedWith": "2026-10-20",
     "added": [
-      {
-        "provider": "openrouter",
-        "id": "minimax/minimax-m3.1-flash:free",
-        "displayName": "MiniMax: MiniMax M3.1 Flash (free)",
-        "contextWindow": 1000000
-      },
-      {
-        "provider": "sensenova",
-        "id": "sensenova-6.7-flash-lite",
-        "displayName": "SenseNova 6.7 Flash-Lite",
-        "contextWindow": null
-      },
-      {
-        "provider": "opencode",
-        "id": "opencode:minimax-m3.1-flash-free",
-        "displayName": "minimax-m3.1-flash-free",
-        "contextWindow": 1000000
-      }
-    ],
-    "removed": [
       {
         "provider": "sensenova",
         "id": "deepseek-flash",
@@ -679,11 +669,19 @@
         "id": "sensenova-6.8-flash-lite",
         "displayName": "sensenova-6.8-flash-lite",
         "contextWindow": null
+      }
+    ],
+    "removed": [
+      {
+        "provider": "sensenova",
+        "id": "sensenova-6.7-flash-lite",
+        "displayName": "SenseNova 6.7 Flash-Lite",
+        "contextWindow": null
       },
       {
-        "provider": "opencode",
-        "id": "opencode:space-bunny-free",
-        "displayName": "space-bunny-free",
+        "provider": "kilo",
+        "id": "thinkingmachines/inkling-small:free",
+        "displayName": "Thinking Machines: Inkling Small (free)",
         "contextWindow": 1048576
       }
     ],
