@@ -1,15 +1,15 @@
 {
   "schemaVersion": 2,
-  "date": "2026-10-21",
-  "generatedAt": "2026-10-21T00:40:16.681Z",
-  "reportPath": "reports/provider-free-model-audit-2026-10-21.md",
-  "totalModels": 95,
+  "date": "2026-10-22",
+  "generatedAt": "2026-10-22T00:43:31.674Z",
+  "reportPath": "reports/provider-free-model-audit-2026-10-22.md",
+  "totalModels": 94,
   "providers": [
     {
       "id": "openrouter",
       "display": "OpenRouter",
       "status": "ok",
-      "count": 17,
+      "count": 18,
       "freeType": "零价格模型",
       "freeBasis": "实时目录中仅保留 `:free` 或 `openrouter/free`、输入输出价格均为 0、仅输出文本的模型",
       "risk": "免费账号通常共享日请求额度；上游目录和限额会变",
@@ -82,6 +82,11 @@
         {
           "id": "poolside/laguna-xs-2.1:free",
           "displayName": "Poolside: Laguna XS 2.1 (free)",
+          "contextWindow": 262144
+        },
+        {
+          "id": "recursive/flint-v1.0:free",
+          "displayName": "Recursive: Flint (free)",
           "contextWindow": 262144
         },
         {
@@ -344,23 +349,12 @@
     {
       "id": "huggingface",
       "display": "Hugging Face",
-      "status": "ok",
-      "count": 2,
+      "status": "error",
+      "count": 0,
       "freeType": "实时零价端点",
       "freeBasis": "实时端点明确报告 `is_free`，或输入输出价格均为 0",
       "risk": "普通 Router 模型可能消耗 credits 或按量收费，因此不会混入",
-      "models": [
-        {
-          "id": "prism-ml/Ternary-Bonsai-27B-AWQ-4bit",
-          "displayName": "prism-ml/Ternary-Bonsai-27B-AWQ-4bit",
-          "contextWindow": 262144
-        },
-        {
-          "id": "prism-ml/Ternary-Bonsai-27B-gguf",
-          "displayName": "prism-ml/Ternary-Bonsai-27B-gguf",
-          "contextWindow": 262144
-        }
-      ]
+      "models": []
     },
     {
       "id": "sensenova",
@@ -611,14 +605,14 @@
           "contextWindow": 200000
         },
         {
+          "id": "opencode:flint-40b-free",
+          "displayName": "flint-40b-free",
+          "contextWindow": 262144
+        },
+        {
           "id": "opencode:glm-5.3-flash-free",
           "displayName": "glm-5.3-flash-free",
           "contextWindow": 200000
-        },
-        {
-          "id": "opencode:longcat-2.5-preview-free",
-          "displayName": "longcat-2.5-preview-free",
-          "contextWindow": 1000000
         },
         {
           "id": "opencode:mimo-v2.6-flash-free",
@@ -644,45 +638,27 @@
     }
   ],
   "changes": {
-    "comparedWith": "2026-10-20",
+    "comparedWith": "2026-10-21",
     "added": [
       {
-        "provider": "sensenova",
-        "id": "deepseek-flash",
-        "displayName": "deepseek-flash",
-        "contextWindow": null
+        "provider": "openrouter",
+        "id": "recursive/flint-v1.0:free",
+        "displayName": "Recursive: Flint (free)",
+        "contextWindow": 262144
       },
       {
-        "provider": "sensenova",
-        "id": "deepseek-v4.1-flash",
-        "displayName": "deepseek-v4.1-flash",
-        "contextWindow": null
-      },
-      {
-        "provider": "sensenova",
-        "id": "kimi-k3",
-        "displayName": "kimi-k3",
-        "contextWindow": null
-      },
-      {
-        "provider": "sensenova",
-        "id": "sensenova-6.8-flash-lite",
-        "displayName": "sensenova-6.8-flash-lite",
-        "contextWindow": null
+        "provider": "opencode",
+        "id": "opencode:flint-40b-free",
+        "displayName": "flint-40b-free",
+        "contextWindow": 262144
       }
     ],
     "removed": [
       {
-        "provider": "sensenova",
-        "id": "sensenova-6.7-flash-lite",
-        "displayName": "SenseNova 6.7 Flash-Lite",
-        "contextWindow": null
-      },
-      {
-        "provider": "kilo",
-        "id": "thinkingmachines/inkling-small:free",
-        "displayName": "Thinking Machines: Inkling Small (free)",
-        "contextWindow": 1048576
+        "provider": "opencode",
+        "id": "opencode:longcat-2.5-preview-free",
+        "displayName": "longcat-2.5-preview-free",
+        "contextWindow": 1000000
       }
     ],
     "comparedProviders": [
@@ -692,7 +668,6 @@
       "modelscope",
       "nvidia",
       "cohere",
-      "huggingface",
       "sensenova",
       "qianfan",
       "kilo",

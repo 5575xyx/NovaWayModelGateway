@@ -33,13 +33,13 @@
 
 <!-- AUDIT-SUMMARY-START -->
 
-> **目录审计于 2026-10-21（Asia/Shanghai）更新：95 个免费模型入口，覆盖 13/15 个 Provider。** 这里统计的是通过免费规则过滤的 Provider 模型入口，同一模型出现在多个 Provider 时会分别计数；本次未发送真实推理请求。
+> **目录审计于 2026-10-22（Asia/Shanghai）更新：94 个免费模型入口，覆盖 12/15 个 Provider。** 这里统计的是通过免费规则过滤的 Provider 模型入口，同一模型出现在多个 Provider 时会分别计数；本次未发送真实推理请求。
 
-> 未配置密钥：Google Gemini、GitHub Models。
+> 未配置密钥：Google Gemini、GitHub Models。 本次目录失败：Hugging Face。
 
 | Provider                 | 状态      | 免费模型数 | 免费类型                 |
 | ------------------------ | --------- | ---------: | ------------------------ |
-| OpenRouter               | 🟢 正常   |         17 | 零价格模型               |
+| OpenRouter               | 🟢 正常   |         18 | 零价格模型               |
 | Google Gemini            | ⚪ 未接入 |     未接入 | 账号 Free Tier           |
 | Zhipu AI                 | 🟢 正常   |          2 | 官方免费型号             |
 | SiliconFlow              | 🟢 正常   |          5 | 免费白名单               |
@@ -47,7 +47,7 @@
 | NVIDIA NIM               | 🟢 正常   |          9 | 免费开发端点             |
 | GitHub Models            | ⚪ 未接入 |     未接入 | 原型开发额度             |
 | Cohere                   | 🟢 正常   |          1 | 免费 Trial/Production    |
-| Hugging Face             | 🟢 正常   |          2 | 实时零价端点             |
+| Hugging Face             | 🔴 失败   |   暂不可用 | 实时零价端点             |
 | SenseNova                | 🟢 正常   |          6 | 实时零价模型             |
 | Baidu Qianfan            | 🟢 正常   |          0 | 官方免费白名单交集       |
 | Kilo Code                | 🟢 正常   |         17 | 聚合免费模型             |
@@ -55,34 +55,31 @@
 | Agnes AI (International) | 🟢 正常   |          6 | 官方免费模型             |
 | OpenCode Zen             | 🟢 正常   |          9 | 实时零价模型（匿名通道） |
 
-[查看稳定的完整免费模型清单](FREE_MODELS.md) · [查看本次目录审计报告](reports/provider-free-model-audit-2026-10-21.md)
+[查看稳定的完整免费模型清单](FREE_MODELS.md) · [查看本次目录审计报告](reports/provider-free-model-audit-2026-10-22.md)
 
 ### 今日变化
 
-与 2026-10-20 相比，在成功比较的 13 个 Provider 中：**新增 4 个，移除 2 个**。
+与 2026-10-21 相比，在成功比较的 12 个 Provider 中：**新增 2 个，移除 1 个**。
 
 <details>
-<summary>查看新增的 4 个模型</summary>
+<summary>查看新增的 2 个模型</summary>
 
-- `sensenova:deepseek-flash`
-- `sensenova:deepseek-v4.1-flash`
-- `sensenova:kimi-k3`
-- `sensenova:sensenova-6.8-flash-lite`
+- `openrouter:recursive/flint-v1.0:free`
+- `opencode:opencode:flint-40b-free`
 
 </details>
 
 <details>
-<summary>查看移除的 2 个模型</summary>
+<summary>查看移除的 1 个模型</summary>
 
-- `sensenova:sensenova-6.7-flash-lite`
-- `kilo:thinkingmachines/inkling-small:free`
+- `opencode:opencode:longcat-2.5-preview-free`
 
 </details>
 
 ### 展开完整模型列表
 
 <details>
-<summary><strong>OpenRouter · 17 个模型</strong></summary>
+<summary><strong>OpenRouter · 18 个模型</strong></summary>
 
 - `openrouter:cohere/north-mini-code:free` — Cohere: North Mini Code (free)
 - `openrouter:dots-studio/dots-3-note-preview:free` — Dots Studio: Dots3-Note Preview (free)
@@ -98,6 +95,7 @@
 - `openrouter:openrouter/free` — Free Models Router
 - `openrouter:poolside/laguna-s-2.1:free` — Poolside: Laguna S 2.1 (free)
 - `openrouter:poolside/laguna-xs-2.1:free` — Poolside: Laguna XS 2.1 (free)
+- `openrouter:recursive/flint-v1.0:free` — Recursive: Flint (free)
 - `openrouter:thinkingmachines/inkling-small:free` — Thinking Machines: Inkling Small (free)
 - `openrouter:thinkingmachines/inkling:free` — Thinking Machines: Inkling (free)
 - `openrouter:xingchen-agi/xing4.0-29b-a4b:free` — XingChen: Xing4.0 29B A4B (free)
@@ -164,14 +162,6 @@
 <summary><strong>Cohere · 1 个模型</strong></summary>
 
 - `cohere:north-mini-code-1-0`
-
-</details>
-
-<details>
-<summary><strong>Hugging Face · 2 个模型</strong></summary>
-
-- `huggingface:prism-ml/Ternary-Bonsai-27B-AWQ-4bit`
-- `huggingface:prism-ml/Ternary-Bonsai-27B-gguf`
 
 </details>
 
@@ -246,8 +236,8 @@
 - `opencode:opencode:beam-free` — beam-free
 - `opencode:opencode:big-pickle` — big-pickle
 - `opencode:opencode:deepseek-v4.1-flash-free` — deepseek-v4.1-flash-free
+- `opencode:opencode:flint-40b-free` — flint-40b-free
 - `opencode:opencode:glm-5.3-flash-free` — glm-5.3-flash-free
-- `opencode:opencode:longcat-2.5-preview-free` — longcat-2.5-preview-free
 - `opencode:opencode:mimo-v2.6-flash-free` — mimo-v2.6-flash-free
 - `opencode:opencode:minimax-m3.1-flash-free` — minimax-m3.1-flash-free
 - `opencode:opencode:nemotron-3.5-lightning-free` — nemotron-3.5-lightning-free
