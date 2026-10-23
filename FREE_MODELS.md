@@ -2,30 +2,26 @@
 
 <!-- 此文件由 scripts/update-readme-audit.mjs 自动生成，请勿手动编辑。 -->
 
-> 最近目录审计：**2026-10-22（Asia/Shanghai）** · **94** 个免费模型入口 · **12/15** 个 Provider 正常。
+> 最近目录审计：**2026-10-23（Asia/Shanghai）** · **92** 个免费模型入口 · **12/15** 个 Provider 正常。
 
-[返回项目 README](README.md) · [查看本次目录审计报告](reports/provider-free-model-audit-2026-10-22.md)
+[返回项目 README](README.md) · [查看本次目录审计报告](reports/provider-free-model-audit-2026-10-23.md)
 
 这份列表每天由 GitHub Actions 通过各 Provider 的模型目录接口刷新，并应用 FreeModelFinder 核心层的免费规则。它不执行真实推理，不代表无限额度、永久免费或生产级可用。同一上游模型通过多个 Provider 提供时会分别计数，因为对应的账号资格、额度和 Gateway 模型 ID 不同。
 
 ## 今日变化
 
-与 2026-10-21 相比，在成功比较的 12 个 Provider 中：**新增 2 个，移除 1 个**。
-
-### 新增
-
-- `openrouter:recursive/flint-v1.0:free`
-- `opencode:opencode:flint-40b-free`
+与 2026-10-22 相比，在成功比较的 12 个 Provider 中：**新增 0 个，移除 2 个**。
 
 ### 移除
 
-- `opencode:opencode:longcat-2.5-preview-free`
+- `openrouter:minimax/minimax-m3.1-flash:free`
+- `opencode:opencode:minimax-m3.1-flash-free`
 
 ## Provider 汇总
 
 | Provider                 | 状态      | 免费模型数 | 免费类型                 | 免费依据                                                                                                                                      |
 | ------------------------ | --------- | ---------: | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| OpenRouter               | 🟢 正常   |         18 | 零价格模型               | 实时目录中仅保留 `:free` 或 `openrouter/free`、输入输出价格均为 0、仅输出文本的模型                                                           |
+| OpenRouter               | 🟢 正常   |         17 | 零价格模型               | 实时目录中仅保留 `:free` 或 `openrouter/free`、输入输出价格均为 0、仅输出文本的模型                                                           |
 | Google Gemini            | ⚪ 未接入 |     未接入 | 账号 Free Tier           | 账号实时目录与 Free Tier 白名单取交集，只保留支持 `generateContent` 的型号                                                                    |
 | Zhipu AI                 | 🟢 正常   |          2 | 官方免费型号             | 只列入官方免费 Flash 清单                                                                                                                     |
 | SiliconFlow              | 🟢 正常   |          5 | 免费白名单               | 平台免费型号白名单与实时模型目录取交集                                                                                                        |
@@ -39,7 +35,7 @@
 | Kilo Code                | 🟢 正常   |         17 | 聚合免费模型             | 白名单 + 零价格双重验证，覆盖 17+ 个免费模型                                                                                                  |
 | Agnes AI (China)         | 🟢 正常   |          5 | 官方免费模型             | 官方定价页确认的免费模型清单（agnes-2.5-flash、agnes-3.0-flash、agnes-image-_、agnes-video-_）                                                |
 | Agnes AI (International) | 🟢 正常   |          6 | 官方免费模型             | 官方定价页确认的免费模型清单（agnes-2.5-flash、agnes-3.0-flash、agnes-image-_、agnes-video-_）                                                |
-| OpenCode Zen             | 🟢 正常   |          9 | 实时零价模型（匿名通道） | 实时抓取 https://opencode.ai/zen（Zen / Zen Go 双 tier）目录，并以 models.dev 定价 cost=0 判定免费；未配置密钥时回退匿名通道（Bearer public） |
+| OpenCode Zen             | 🟢 正常   |          8 | 实时零价模型（匿名通道） | 实时抓取 https://opencode.ai/zen（Zen / Zen Go 双 tier）目录，并以 models.dev 定价 cost=0 判定免费；未配置密钥时回退匿名通道（Bearer public） |
 
 ## 完整列表
 
@@ -57,7 +53,6 @@
 | `openrouter:google/gemma-4-26b-a4b-it:free`                     | Google: Gemma 4 26B A4B (free)          |     262.1K |
 | `openrouter:google/gemma-4-31b-it:free`                         | Google: Gemma 4 31B (free)              |     262.1K |
 | `openrouter:liquid/lfm-2.5-2.6b:free`                           | LiquidAI: LFM2.5-2.6B (free)            |      65.5K |
-| `openrouter:minimax/minimax-m3.1-flash:free`                    | MiniMax: MiniMax M3.1 Flash (free)      |         1M |
 | `openrouter:nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | NVIDIA: Nemotron 3 Nano Omni (free)     |       256K |
 | `openrouter:nvidia/nemotron-3-super-120b-a12b:free`             | NVIDIA: Nemotron 3 Super (free)         |     262.1K |
 | `openrouter:nvidia/nemotron-3-ultra-550b-a55b:free`             | NVIDIA: Nemotron 3 Ultra (free)         |         1M |
@@ -279,6 +274,5 @@
 | `opencode:opencode:flint-40b-free`              | flint-40b-free              |     262.1K |
 | `opencode:opencode:glm-5.3-flash-free`          | glm-5.3-flash-free          |       200K |
 | `opencode:opencode:mimo-v2.6-flash-free`        | mimo-v2.6-flash-free        |       200K |
-| `opencode:opencode:minimax-m3.1-flash-free`     | minimax-m3.1-flash-free     |         1M |
 | `opencode:opencode:nemotron-3.5-lightning-free` | nemotron-3.5-lightning-free |     262.1K |
 | `opencode:opencode:nemotron-3.5-super-vl-free`  | nemotron-3.5-super-vl-free  |         1M |

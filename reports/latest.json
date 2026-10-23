@@ -1,15 +1,15 @@
 {
   "schemaVersion": 2,
-  "date": "2026-10-22",
-  "generatedAt": "2026-10-22T00:43:31.674Z",
-  "reportPath": "reports/provider-free-model-audit-2026-10-22.md",
-  "totalModels": 94,
+  "date": "2026-10-23",
+  "generatedAt": "2026-10-23T00:43:21.031Z",
+  "reportPath": "reports/provider-free-model-audit-2026-10-23.md",
+  "totalModels": 92,
   "providers": [
     {
       "id": "openrouter",
       "display": "OpenRouter",
       "status": "ok",
-      "count": 18,
+      "count": 17,
       "freeType": "零价格模型",
       "freeBasis": "实时目录中仅保留 `:free` 或 `openrouter/free`、输入输出价格均为 0、仅输出文本的模型",
       "risk": "免费账号通常共享日请求额度；上游目录和限额会变",
@@ -38,11 +38,6 @@
           "id": "liquid/lfm-2.5-2.6b:free",
           "displayName": "LiquidAI: LFM2.5-2.6B (free)",
           "contextWindow": 65536
-        },
-        {
-          "id": "minimax/minimax-m3.1-flash:free",
-          "displayName": "MiniMax: MiniMax M3.1 Flash (free)",
-          "contextWindow": 1000000
         },
         {
           "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
@@ -584,7 +579,7 @@
       "id": "opencode",
       "display": "OpenCode Zen",
       "status": "ok",
-      "count": 9,
+      "count": 8,
       "freeType": "实时零价模型（匿名通道）",
       "freeBasis": "实时抓取 https://opencode.ai/zen（Zen / Zen Go 双 tier）目录，并以 models.dev 定价 cost=0 判定免费；未配置密钥时回退匿名通道（Bearer public）",
       "risk": "匿名通道与免费层有速率和并发限制；部分免费模型只在 Go tier 提供；上游目录与定价可能随时变化",
@@ -620,11 +615,6 @@
           "contextWindow": 200000
         },
         {
-          "id": "opencode:minimax-m3.1-flash-free",
-          "displayName": "minimax-m3.1-flash-free",
-          "contextWindow": 1000000
-        },
-        {
           "id": "opencode:nemotron-3.5-lightning-free",
           "displayName": "nemotron-3.5-lightning-free",
           "contextWindow": 262144
@@ -638,26 +628,19 @@
     }
   ],
   "changes": {
-    "comparedWith": "2026-10-21",
-    "added": [
+    "comparedWith": "2026-10-22",
+    "added": [],
+    "removed": [
       {
         "provider": "openrouter",
-        "id": "recursive/flint-v1.0:free",
-        "displayName": "Recursive: Flint (free)",
-        "contextWindow": 262144
+        "id": "minimax/minimax-m3.1-flash:free",
+        "displayName": "MiniMax: MiniMax M3.1 Flash (free)",
+        "contextWindow": 1000000
       },
       {
         "provider": "opencode",
-        "id": "opencode:flint-40b-free",
-        "displayName": "flint-40b-free",
-        "contextWindow": 262144
-      }
-    ],
-    "removed": [
-      {
-        "provider": "opencode",
-        "id": "opencode:longcat-2.5-preview-free",
-        "displayName": "longcat-2.5-preview-free",
+        "id": "opencode:minimax-m3.1-flash-free",
+        "displayName": "minimax-m3.1-flash-free",
         "contextWindow": 1000000
       }
     ],
