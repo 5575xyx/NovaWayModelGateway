@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
-  "date": "2026-10-24",
-  "generatedAt": "2026-10-24T00:46:46.028Z",
-  "reportPath": "reports/provider-free-model-audit-2026-10-24.md",
-  "totalModels": 92,
+  "date": "2026-10-25",
+  "generatedAt": "2026-10-25T00:22:25.795Z",
+  "reportPath": "reports/provider-free-model-audit-2026-10-25.md",
+  "totalModels": 93,
   "providers": [
     {
       "id": "openrouter",
@@ -579,7 +579,7 @@
       "id": "opencode",
       "display": "OpenCode Zen",
       "status": "ok",
-      "count": 8,
+      "count": 9,
       "freeType": "实时零价模型（匿名通道）",
       "freeBasis": "实时抓取 https://opencode.ai/zen（Zen / Zen Go 双 tier）目录，并以 models.dev 定价 cost=0 判定免费；未配置密钥时回退匿名通道（Bearer public）",
       "risk": "匿名通道与免费层有速率和并发限制；部分免费模型只在 Go tier 提供；上游目录与定价可能随时变化",
@@ -610,6 +610,11 @@
           "contextWindow": 200000
         },
         {
+          "id": "opencode:iceman-contributor-free",
+          "displayName": "iceman-contributor-free",
+          "contextWindow": 262144
+        },
+        {
           "id": "opencode:mimo-v2.6-flash-free",
           "displayName": "mimo-v2.6-flash-free",
           "contextWindow": 200000
@@ -628,8 +633,15 @@
     }
   ],
   "changes": {
-    "comparedWith": "2026-10-23",
-    "added": [],
+    "comparedWith": "2026-10-24",
+    "added": [
+      {
+        "provider": "opencode",
+        "id": "opencode:iceman-contributor-free",
+        "displayName": "iceman-contributor-free",
+        "contextWindow": 262144
+      }
+    ],
     "removed": [],
     "comparedProviders": [
       "openrouter",
