@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "date": "2026-10-25",
-  "generatedAt": "2026-10-25T00:22:25.795Z",
-  "reportPath": "reports/provider-free-model-audit-2026-10-25.md",
+  "date": "2026-10-26",
+  "generatedAt": "2026-10-26T00:27:18.105Z",
+  "reportPath": "reports/provider-free-model-audit-2026-10-26.md",
   "totalModels": 93,
   "providers": [
     {
@@ -633,15 +633,8 @@
     }
   ],
   "changes": {
-    "comparedWith": "2026-10-24",
-    "added": [
-      {
-        "provider": "opencode",
-        "id": "opencode:iceman-contributor-free",
-        "displayName": "iceman-contributor-free",
-        "contextWindow": 262144
-      }
-    ],
+    "comparedWith": "2026-10-25",
+    "added": [],
     "removed": [],
     "comparedProviders": [
       "openrouter",
