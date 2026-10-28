@@ -2,32 +2,37 @@
 
 <!-- 此文件由 scripts/update-readme-audit.mjs 自动生成，请勿手动编辑。 -->
 
-> 最近目录审计：**2026-10-27（Asia/Shanghai）** · **93** 个免费模型入口 · **12/15** 个 Provider 正常。
+> 最近目录审计：**2026-10-28（Asia/Shanghai）** · **90** 个免费模型入口 · **11/15** 个 Provider 正常。
 
-[返回项目 README](README.md) · [查看本次目录审计报告](reports/provider-free-model-audit-2026-10-27.md)
+[返回项目 README](README.md) · [查看本次目录审计报告](reports/provider-free-model-audit-2026-10-28.md)
 
 这份列表每天由 GitHub Actions 通过各 Provider 的模型目录接口刷新，并应用 FreeModelFinder 核心层的免费规则。它不执行真实推理，不代表无限额度、永久免费或生产级可用。同一上游模型通过多个 Provider 提供时会分别计数，因为对应的账号资格、额度和 Gateway 模型 ID 不同。
 
 ## 今日变化
 
-与 2026-10-26 相比，成功比较的 12 个 Provider 模型清单没有变化。
+与 2026-10-27 相比，在成功比较的 11 个 Provider 中：**新增 0 个，移除 2 个**。
+
+### 移除
+
+- `openrouter:nvidia/nemotron-3-super-120b-a12b:free`
+- `kilo:nvidia/nemotron-3-super-120b-a12b:free`
 
 ## Provider 汇总
 
 | Provider                 | 状态      | 免费模型数 | 免费类型                 | 免费依据                                                                                                                                      |
 | ------------------------ | --------- | ---------: | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| OpenRouter               | 🟢 正常   |         17 | 零价格模型               | 实时目录中仅保留 `:free` 或 `openrouter/free`、输入输出价格均为 0、仅输出文本的模型                                                           |
+| OpenRouter               | 🟢 正常   |         16 | 零价格模型               | 实时目录中仅保留 `:free` 或 `openrouter/free`、输入输出价格均为 0、仅输出文本的模型                                                           |
 | Google Gemini            | ⚪ 未接入 |     未接入 | 账号 Free Tier           | 账号实时目录与 Free Tier 白名单取交集，只保留支持 `generateContent` 的型号                                                                    |
 | Zhipu AI                 | 🟢 正常   |          2 | 官方免费型号             | 只列入官方免费 Flash 清单                                                                                                                     |
 | SiliconFlow              | 🟢 正常   |          5 | 免费白名单               | 平台免费型号白名单与实时模型目录取交集                                                                                                        |
 | ModelScope               | 🟢 正常   |         16 | 账号免费额度             | API-Inference 免费型号清单与可用目录取交集                                                                                                    |
 | NVIDIA NIM               | 🟢 正常   |          9 | 免费开发端点             | 只保留审核过的 build.nvidia.com 免费开发端点                                                                                                  |
 | GitHub Models            | ⚪ 未接入 |     未接入 | 原型开发额度             | 目录中的文本输出模型使用账号自带原型开发额度                                                                                                  |
-| Cohere                   | 🟢 正常   |          1 | 免费 Trial/Production    | 只保留 Trial Key 与 Production Key 都明确免费的 `north-mini-code-1-0`                                                                         |
+| Cohere                   | 🔴 失败   |   暂不可用 | 免费 Trial/Production    | 只保留 Trial Key 与 Production Key 都明确免费的 `north-mini-code-1-0`                                                                         |
 | Hugging Face             | 🔴 失败   |   暂不可用 | 实时零价端点             | 实时端点明确报告 `is_free`，或输入输出价格均为 0                                                                                              |
 | SenseNova                | 🟢 正常   |          6 | 实时零价模型             | 实时目录中输入、输出价格都为 0 的文本模型；接口不可用时使用审核过的免费清单                                                                   |
 | Baidu Qianfan            | 🟢 正常   |          0 | 官方免费白名单交集       | 实时目录取交集，仅收录官方公告永久免费的白名单型号；当前 Speed / Lite / Tiny 等旧免费型号已全部退役，暂无可用型号，新免费型号加入白名单即恢复 |
-| Kilo Code                | 🟢 正常   |         17 | 聚合免费模型             | 白名单 + 零价格双重验证，覆盖 17+ 个免费模型                                                                                                  |
+| Kilo Code                | 🟢 正常   |         16 | 聚合免费模型             | 白名单 + 零价格双重验证，覆盖 17+ 个免费模型                                                                                                  |
 | Agnes AI (China)         | 🟢 正常   |          5 | 官方免费模型             | 官方定价页确认的免费模型清单（agnes-2.5-flash、agnes-3.0-flash、agnes-image-_、agnes-video-_）                                                |
 | Agnes AI (International) | 🟢 正常   |          6 | 官方免费模型             | 官方定价页确认的免费模型清单（agnes-2.5-flash、agnes-3.0-flash、agnes-image-_、agnes-video-_）                                                |
 | OpenCode Zen             | 🟢 正常   |          9 | 实时零价模型（匿名通道） | 实时抓取 https://opencode.ai/zen（Zen / Zen Go 双 tier）目录，并以 models.dev 定价 cost=0 判定免费；未配置密钥时回退匿名通道（Bearer public） |
@@ -49,7 +54,6 @@
 | `openrouter:google/gemma-4-31b-it:free`                         | Google: Gemma 4 31B (free)              |     262.1K |
 | `openrouter:liquid/lfm-2.5-2.6b:free`                           | LiquidAI: LFM2.5-2.6B (free)            |      65.5K |
 | `openrouter:nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | NVIDIA: Nemotron 3 Nano Omni (free)     |       256K |
-| `openrouter:nvidia/nemotron-3-super-120b-a12b:free`             | NVIDIA: Nemotron 3 Super (free)         |     262.1K |
 | `openrouter:nvidia/nemotron-3-ultra-550b-a55b:free`             | NVIDIA: Nemotron 3 Ultra (free)         |         1M |
 | `openrouter:nvidia/nemotron-3.5-lightning:free`                 | NVIDIA: Nemotron 3.5 Lightning (free)   |         1M |
 | `openrouter:nvidia/nemotron-3.5-super-vl:free`                  | NVIDIA: Nemotron 3.5 Super VL (free)    |         1M |
@@ -154,13 +158,11 @@
 ### Cohere
 
 - Provider ID：`cohere`
-- 状态：🟢 正常
+- 状态：🔴 失败
 - 免费依据：只保留 Trial Key 与 Production Key 都明确免费的 `north-mini-code-1-0`
 - 主要风险：有速率限制；其他 Command 模型不再被标记为免费
 
-| Gateway 模型 ID              | 显示名称            | 上下文窗口 |
-| ---------------------------- | ------------------- | ---------: |
-| `cohere:north-mini-code-1-0` | north-mini-code-1-0 |       436K |
+本次没有可展示的模型清单。
 
 ### Hugging Face
 
@@ -212,7 +214,6 @@
 | `kilo:kilo-auto/free`                                     | Auto Free                                  |       256K |
 | `kilo:liquid/lfm-2.5-2.6b:free`                           | LiquidAI: LFM2.5-2.6B (free)               |      65.5K |
 | `kilo:nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | NVIDIA: Nemotron 3 Nano Omni (free)        |       256K |
-| `kilo:nvidia/nemotron-3-super-120b-a12b:free`             | NVIDIA: Nemotron 3 Super (free)            |     262.1K |
 | `kilo:nvidia/nemotron-3-ultra-550b-a55b:free`             | NVIDIA: Nemotron 3 Ultra (free)            |         1M |
 | `kilo:nvidia/nemotron-3.5-content-safety:free`            | NVIDIA: Nemotron 3.5 Content Safety (free) |       128K |
 | `kilo:nvidia/nemotron-3.5-lightning:free`                 | NVIDIA: Nemotron 3.5 Lightning (free)      |         1M |

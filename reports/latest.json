@@ -1,15 +1,15 @@
 {
   "schemaVersion": 2,
-  "date": "2026-10-27",
-  "generatedAt": "2026-10-27T01:31:25.610Z",
-  "reportPath": "reports/provider-free-model-audit-2026-10-27.md",
-  "totalModels": 93,
+  "date": "2026-10-28",
+  "generatedAt": "2026-10-28T01:27:03.270Z",
+  "reportPath": "reports/provider-free-model-audit-2026-10-28.md",
+  "totalModels": 90,
   "providers": [
     {
       "id": "openrouter",
       "display": "OpenRouter",
       "status": "ok",
-      "count": 17,
+      "count": 16,
       "freeType": "零价格模型",
       "freeBasis": "实时目录中仅保留 `:free` 或 `openrouter/free`、输入输出价格均为 0、仅输出文本的模型",
       "risk": "免费账号通常共享日请求额度；上游目录和限额会变",
@@ -43,11 +43,6 @@
           "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
           "displayName": "NVIDIA: Nemotron 3 Nano Omni (free)",
           "contextWindow": 256000
-        },
-        {
-          "id": "nvidia/nemotron-3-super-120b-a12b:free",
-          "displayName": "NVIDIA: Nemotron 3 Super (free)",
-          "contextWindow": 262144
         },
         {
           "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
@@ -328,18 +323,12 @@
     {
       "id": "cohere",
       "display": "Cohere",
-      "status": "ok",
-      "count": 1,
+      "status": "error",
+      "count": 0,
       "freeType": "免费 Trial/Production",
       "freeBasis": "只保留 Trial Key 与 Production Key 都明确免费的 `north-mini-code-1-0`",
       "risk": "有速率限制；其他 Command 模型不再被标记为免费",
-      "models": [
-        {
-          "id": "north-mini-code-1-0",
-          "displayName": "north-mini-code-1-0",
-          "contextWindow": 436000
-        }
-      ]
+      "models": []
     },
     {
       "id": "huggingface",
@@ -406,7 +395,7 @@
       "id": "kilo",
       "display": "Kilo Code",
       "status": "ok",
-      "count": 17,
+      "count": 16,
       "freeType": "聚合免费模型",
       "freeBasis": "白名单 + 零价格双重验证，覆盖 17+ 个免费模型",
       "risk": "免费层约 200 请求/小时；部分模型与 OpenRouter 重叠",
@@ -445,11 +434,6 @@
           "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
           "displayName": "NVIDIA: Nemotron 3 Nano Omni (free)",
           "contextWindow": 256000
-        },
-        {
-          "id": "nvidia/nemotron-3-super-120b-a12b:free",
-          "displayName": "NVIDIA: Nemotron 3 Super (free)",
-          "contextWindow": 262144
         },
         {
           "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
@@ -633,16 +617,28 @@
     }
   ],
   "changes": {
-    "comparedWith": "2026-10-26",
+    "comparedWith": "2026-10-27",
     "added": [],
-    "removed": [],
+    "removed": [
+      {
+        "provider": "openrouter",
+        "id": "nvidia/nemotron-3-super-120b-a12b:free",
+        "displayName": "NVIDIA: Nemotron 3 Super (free)",
+        "contextWindow": 262144
+      },
+      {
+        "provider": "kilo",
+        "id": "nvidia/nemotron-3-super-120b-a12b:free",
+        "displayName": "NVIDIA: Nemotron 3 Super (free)",
+        "contextWindow": 262144
+      }
+    ],
     "comparedProviders": [
       "openrouter",
       "zhipu",
       "siliconflow",
       "modelscope",
       "nvidia",
-      "cohere",
       "sensenova",
       "qianfan",
       "kilo",
