@@ -33,13 +33,13 @@
 
 <!-- AUDIT-SUMMARY-START -->
 
-> **目录审计于 2026-10-31（Asia/Shanghai）更新：90 个免费模型入口，覆盖 11/15 个 Provider。** 这里统计的是通过免费规则过滤的 Provider 模型入口，同一模型出现在多个 Provider 时会分别计数；本次未发送真实推理请求。
+> **目录审计于 2026-11-01（Asia/Shanghai）更新：86 个免费模型入口，覆盖 11/15 个 Provider。** 这里统计的是通过免费规则过滤的 Provider 模型入口，同一模型出现在多个 Provider 时会分别计数；本次未发送真实推理请求。
 
 > 未配置密钥：Google Gemini、GitHub Models。 本次目录失败：Cohere、Hugging Face。
 
 | Provider                 | 状态      | 免费模型数 | 免费类型                 |
 | ------------------------ | --------- | ---------: | ------------------------ |
-| OpenRouter               | 🟢 正常   |         16 | 零价格模型               |
+| OpenRouter               | 🟢 正常   |         14 | 零价格模型               |
 | Google Gemini            | ⚪ 未接入 |     未接入 | 账号 Free Tier           |
 | Zhipu AI                 | 🟢 正常   |          2 | 官方免费型号             |
 | SiliconFlow              | 🟢 正常   |          5 | 免费白名单               |
@@ -50,21 +50,31 @@
 | Hugging Face             | 🔴 失败   |   暂不可用 | 实时零价端点             |
 | SenseNova                | 🟢 正常   |          6 | 实时零价模型             |
 | Baidu Qianfan            | 🟢 正常   |          0 | 官方免费白名单交集       |
-| Kilo Code                | 🟢 正常   |         16 | 聚合免费模型             |
+| Kilo Code                | 🟢 正常   |         14 | 聚合免费模型             |
 | Agnes AI (China)         | 🟢 正常   |          5 | 官方免费模型             |
 | Agnes AI (International) | 🟢 正常   |          6 | 官方免费模型             |
 | OpenCode Zen             | 🟢 正常   |          9 | 实时零价模型（匿名通道） |
 
-[查看稳定的完整免费模型清单](FREE_MODELS.md) · [查看本次目录审计报告](reports/provider-free-model-audit-2026-10-31.md)
+[查看稳定的完整免费模型清单](FREE_MODELS.md) · [查看本次目录审计报告](reports/provider-free-model-audit-2026-11-01.md)
 
 ### 今日变化
 
-与 2026-10-30 相比，成功比较的 11 个 Provider 模型清单没有变化。
+与 2026-10-31 相比，在成功比较的 11 个 Provider 中：**新增 0 个，移除 4 个**。
+
+<details>
+<summary>查看移除的 4 个模型</summary>
+
+- `openrouter:poolside/laguna-s-2.1:free`
+- `openrouter:poolside/laguna-xs-2.1:free`
+- `kilo:poolside/laguna-s-2.1:free`
+- `kilo:poolside/laguna-xs-2.1:free`
+
+</details>
 
 ### 展开完整模型列表
 
 <details>
-<summary><strong>OpenRouter · 16 个模型</strong></summary>
+<summary><strong>OpenRouter · 14 个模型</strong></summary>
 
 - `openrouter:cohere/north-mini-code:free` — Cohere: North Mini Code (free)
 - `openrouter:dots-studio/dots-3-note-preview:free` — Dots Studio: Dots3-Note Preview (free)
@@ -76,8 +86,6 @@
 - `openrouter:nvidia/nemotron-3.5-lightning:free` — NVIDIA: Nemotron 3.5 Lightning (free)
 - `openrouter:nvidia/nemotron-3.5-super-vl:free` — NVIDIA: Nemotron 3.5 Super VL (free)
 - `openrouter:openrouter/free` — Free Models Router
-- `openrouter:poolside/laguna-s-2.1:free` — Poolside: Laguna S 2.1 (free)
-- `openrouter:poolside/laguna-xs-2.1:free` — Poolside: Laguna XS 2.1 (free)
 - `openrouter:recursive/flint-v1.0:free` — Recursive: Flint (free)
 - `openrouter:thinkingmachines/inkling-small:free` — Thinking Machines: Inkling Small (free)
 - `openrouter:thinkingmachines/inkling:free` — Thinking Machines: Inkling (free)
@@ -161,7 +169,7 @@
 </details>
 
 <details>
-<summary><strong>Kilo Code · 16 个模型</strong></summary>
+<summary><strong>Kilo Code · 14 个模型</strong></summary>
 
 - `kilo:cohere/north-mini-code:free` — Cohere: North Mini Code (free)
 - `kilo:dots-studio/dots-3-note-preview:free` — Dots Studio: Dots3-Note Preview (free)
@@ -177,8 +185,6 @@
 - `kilo:openrouter/bodybuilder` — OpenRouter Body Builder (beta)
 - `kilo:openrouter/free` — OpenRouter Free Models Router
 - `kilo:openrouter/pareto-code` — OpenRouter Pareto Code Router
-- `kilo:poolside/laguna-s-2.1:free` — Poolside: Laguna S 2.1 (free)
-- `kilo:poolside/laguna-xs-2.1:free` — Poolside: Laguna XS 2.1 (free)
 
 </details>
 
