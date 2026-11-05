@@ -1,15 +1,15 @@
 {
   "schemaVersion": 2,
-  "date": "2026-11-04",
-  "generatedAt": "2026-11-04T02:24:16.245Z",
-  "reportPath": "reports/provider-free-model-audit-2026-11-04.md",
-  "totalModels": 83,
+  "date": "2026-11-05",
+  "generatedAt": "2026-11-05T02:33:02.882Z",
+  "reportPath": "reports/provider-free-model-audit-2026-11-05.md",
+  "totalModels": 86,
   "providers": [
     {
       "id": "openrouter",
       "display": "OpenRouter",
       "status": "ok",
-      "count": 14,
+      "count": 12,
       "freeType": "零价格模型",
       "freeBasis": "实时目录中仅保留 `:free` 或 `openrouter/free`、输入输出价格均为 0、仅输出文本的模型",
       "risk": "免费账号通常共享日请求额度；上游目录和限额会变",
@@ -68,16 +68,6 @@
           "id": "recursive/flint-v1.0:free",
           "displayName": "Recursive: Flint (free)",
           "contextWindow": 262144
-        },
-        {
-          "id": "thinkingmachines/inkling-small:free",
-          "displayName": "Thinking Machines: Inkling Small (free)",
-          "contextWindow": 1048576
-        },
-        {
-          "id": "thinkingmachines/inkling:free",
-          "displayName": "Thinking Machines: Inkling (free)",
-          "contextWindow": 1048576
         },
         {
           "id": "xingchen-agi/xing4.0-29b-a4b:free",
@@ -334,24 +324,49 @@
       "id": "sensenova",
       "display": "SenseNova",
       "status": "ok",
-      "count": 3,
+      "count": 8,
       "freeType": "实时零价模型",
       "freeBasis": "实时目录中输入、输出价格都为 0 的文本模型；接口不可用时使用审核过的免费清单",
       "risk": "免费配额和型号可能变化；当前网关只处理文本，即使模型本身支持多模态",
       "models": [
         {
+          "id": "deepseek-flash",
+          "displayName": "deepseek-flash",
+          "contextWindow": null
+        },
+        {
           "id": "deepseek-v4-flash",
-          "displayName": "DeepSeek V4 Flash (SenseNova)",
+          "displayName": "deepseek-v4-flash",
+          "contextWindow": null
+        },
+        {
+          "id": "deepseek-v4.1-flash",
+          "displayName": "deepseek-v4.1-flash",
           "contextWindow": null
         },
         {
           "id": "glm-5.2",
-          "displayName": "GLM-5.2 (SenseNova)",
+          "displayName": "glm-5.2",
           "contextWindow": null
         },
         {
-          "id": "sensenova-6.7-flash-lite",
-          "displayName": "SenseNova 6.7 Flash-Lite",
+          "id": "glm-5.3",
+          "displayName": "glm-5.3",
+          "contextWindow": null
+        },
+        {
+          "id": "kimi-k3",
+          "displayName": "kimi-k3",
+          "contextWindow": null
+        },
+        {
+          "id": "sensenova-6.8-flash",
+          "displayName": "sensenova-6.8-flash",
+          "contextWindow": null
+        },
+        {
+          "id": "sensenova-6.8-flash-lite",
+          "displayName": "sensenova-6.8-flash-lite",
           "contextWindow": null
         }
       ]
@@ -582,22 +597,8 @@
     }
   ],
   "changes": {
-    "comparedWith": "2026-11-03",
+    "comparedWith": "2026-11-04",
     "added": [
-      {
-        "provider": "sensenova",
-        "id": "sensenova-6.7-flash-lite",
-        "displayName": "SenseNova 6.7 Flash-Lite",
-        "contextWindow": null
-      },
-      {
-        "provider": "opencode",
-        "id": "opencode:crouton-alpha-free",
-        "displayName": "crouton-alpha-free",
-        "contextWindow": 1048576
-      }
-    ],
-    "removed": [
       {
         "provider": "sensenova",
         "id": "deepseek-flash",
@@ -608,6 +609,12 @@
         "provider": "sensenova",
         "id": "deepseek-v4.1-flash",
         "displayName": "deepseek-v4.1-flash",
+        "contextWindow": null
+      },
+      {
+        "provider": "sensenova",
+        "id": "glm-5.3",
+        "displayName": "glm-5.3",
         "contextWindow": null
       },
       {
@@ -627,30 +634,26 @@
         "id": "sensenova-6.8-flash-lite",
         "displayName": "sensenova-6.8-flash-lite",
         "contextWindow": null
-      },
+      }
+    ],
+    "removed": [
       {
-        "provider": "kilo",
-        "id": "liquid/lfm-2.5-2.6b:free",
-        "displayName": "LiquidAI: LFM2.5-2.6B (free)",
-        "contextWindow": 65536
-      },
-      {
-        "provider": "kilo",
-        "id": "nvidia/nemotron-3.5-content-safety:free",
-        "displayName": "NVIDIA: Nemotron 3.5 Content Safety (free)",
-        "contextWindow": 128000
-      },
-      {
-        "provider": "kilo",
+        "provider": "openrouter",
         "id": "thinkingmachines/inkling-small:free",
         "displayName": "Thinking Machines: Inkling Small (free)",
         "contextWindow": 1048576
       },
       {
-        "provider": "kilo",
+        "provider": "openrouter",
         "id": "thinkingmachines/inkling:free",
         "displayName": "Thinking Machines: Inkling (free)",
         "contextWindow": 1048576
+      },
+      {
+        "provider": "sensenova",
+        "id": "sensenova-6.7-flash-lite",
+        "displayName": "SenseNova 6.7 Flash-Lite",
+        "contextWindow": null
       }
     ],
     "comparedProviders": [

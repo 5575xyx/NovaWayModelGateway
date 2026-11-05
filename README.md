@@ -33,13 +33,13 @@
 
 <!-- AUDIT-SUMMARY-START -->
 
-> **目录审计于 2026-11-04（Asia/Shanghai）更新：83 个免费模型入口，覆盖 11/15 个 Provider。** 这里统计的是通过免费规则过滤的 Provider 模型入口，同一模型出现在多个 Provider 时会分别计数；本次未发送真实推理请求。
+> **目录审计于 2026-11-05（Asia/Shanghai）更新：86 个免费模型入口，覆盖 11/15 个 Provider。** 这里统计的是通过免费规则过滤的 Provider 模型入口，同一模型出现在多个 Provider 时会分别计数；本次未发送真实推理请求。
 
 > 未配置密钥：Google Gemini、GitHub Models。 本次目录失败：Cohere、Hugging Face。
 
 | Provider                 | 状态      | 免费模型数 | 免费类型                 |
 | ------------------------ | --------- | ---------: | ------------------------ |
-| OpenRouter               | 🟢 正常   |         14 | 零价格模型               |
+| OpenRouter               | 🟢 正常   |         12 | 零价格模型               |
 | Google Gemini            | ⚪ 未接入 |     未接入 | 账号 Free Tier           |
 | Zhipu AI                 | 🟢 正常   |          2 | 官方免费型号             |
 | SiliconFlow              | 🟢 正常   |          5 | 免费白名单               |
@@ -48,46 +48,44 @@
 | GitHub Models            | ⚪ 未接入 |     未接入 | 原型开发额度             |
 | Cohere                   | 🔴 失败   |   暂不可用 | 免费 Trial/Production    |
 | Hugging Face             | 🔴 失败   |   暂不可用 | 实时零价端点             |
-| SenseNova                | 🟢 正常   |          3 | 实时零价模型             |
+| SenseNova                | 🟢 正常   |          8 | 实时零价模型             |
 | Baidu Qianfan            | 🟢 正常   |          0 | 官方免费白名单交集       |
 | Kilo Code                | 🟢 正常   |         12 | 聚合免费模型             |
 | Agnes AI (China)         | 🟢 正常   |          5 | 官方免费模型             |
 | Agnes AI (International) | 🟢 正常   |          6 | 官方免费模型             |
 | OpenCode Zen             | 🟢 正常   |         11 | 实时零价模型（匿名通道） |
 
-[查看稳定的完整免费模型清单](FREE_MODELS.md) · [查看本次目录审计报告](reports/provider-free-model-audit-2026-11-04.md)
+[查看稳定的完整免费模型清单](FREE_MODELS.md) · [查看本次目录审计报告](reports/provider-free-model-audit-2026-11-05.md)
 
 ### 今日变化
 
-与 2026-11-03 相比，在成功比较的 11 个 Provider 中：**新增 2 个，移除 9 个**。
+与 2026-11-04 相比，在成功比较的 11 个 Provider 中：**新增 6 个，移除 3 个**。
 
 <details>
-<summary>查看新增的 2 个模型</summary>
+<summary>查看新增的 6 个模型</summary>
 
-- `sensenova:sensenova-6.7-flash-lite`
-- `opencode:opencode:crouton-alpha-free`
+- `sensenova:deepseek-flash`
+- `sensenova:deepseek-v4.1-flash`
+- `sensenova:glm-5.3`
+- `sensenova:kimi-k3`
+- `sensenova:sensenova-6.8-flash`
+- `sensenova:sensenova-6.8-flash-lite`
 
 </details>
 
 <details>
-<summary>查看移除的 9 个模型</summary>
+<summary>查看移除的 3 个模型</summary>
 
-- `sensenova:deepseek-flash`
-- `sensenova:deepseek-v4.1-flash`
-- `sensenova:kimi-k3`
-- `sensenova:sensenova-6.8-flash`
-- `sensenova:sensenova-6.8-flash-lite`
-- `kilo:liquid/lfm-2.5-2.6b:free`
-- `kilo:nvidia/nemotron-3.5-content-safety:free`
-- `kilo:thinkingmachines/inkling-small:free`
-- `kilo:thinkingmachines/inkling:free`
+- `openrouter:thinkingmachines/inkling-small:free`
+- `openrouter:thinkingmachines/inkling:free`
+- `sensenova:sensenova-6.7-flash-lite`
 
 </details>
 
 ### 展开完整模型列表
 
 <details>
-<summary><strong>OpenRouter · 14 个模型</strong></summary>
+<summary><strong>OpenRouter · 12 个模型</strong></summary>
 
 - `openrouter:cohere/north-mini-code:free` — Cohere: North Mini Code (free)
 - `openrouter:dots-studio/dots-3-note-preview:free` — Dots Studio: Dots3-Note Preview (free)
@@ -100,8 +98,6 @@
 - `openrouter:nvidia/nemotron-3.5-super-vl:free` — NVIDIA: Nemotron 3.5 Super VL (free)
 - `openrouter:openrouter/free` — Free Models Router
 - `openrouter:recursive/flint-v1.0:free` — Recursive: Flint (free)
-- `openrouter:thinkingmachines/inkling-small:free` — Thinking Machines: Inkling Small (free)
-- `openrouter:thinkingmachines/inkling:free` — Thinking Machines: Inkling (free)
 - `openrouter:xingchen-agi/xing4.0-29b-a4b:free` — XingChen: Xing4.0 29B A4B (free)
 
 </details>
@@ -163,11 +159,16 @@
 </details>
 
 <details>
-<summary><strong>SenseNova · 3 个模型</strong></summary>
+<summary><strong>SenseNova · 8 个模型</strong></summary>
 
-- `sensenova:deepseek-v4-flash` — DeepSeek V4 Flash (SenseNova)
-- `sensenova:glm-5.2` — GLM-5.2 (SenseNova)
-- `sensenova:sensenova-6.7-flash-lite` — SenseNova 6.7 Flash-Lite
+- `sensenova:deepseek-flash`
+- `sensenova:deepseek-v4-flash`
+- `sensenova:deepseek-v4.1-flash`
+- `sensenova:glm-5.2`
+- `sensenova:glm-5.3`
+- `sensenova:kimi-k3`
+- `sensenova:sensenova-6.8-flash`
+- `sensenova:sensenova-6.8-flash-lite`
 
 </details>
 
