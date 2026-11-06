@@ -33,7 +33,7 @@
 
 <!-- AUDIT-SUMMARY-START -->
 
-> **目录审计于 2026-11-05（Asia/Shanghai）更新：86 个免费模型入口，覆盖 11/15 个 Provider。** 这里统计的是通过免费规则过滤的 Provider 模型入口，同一模型出现在多个 Provider 时会分别计数；本次未发送真实推理请求。
+> **目录审计于 2026-11-06（Asia/Shanghai）更新：84 个免费模型入口，覆盖 11/15 个 Provider。** 这里统计的是通过免费规则过滤的 Provider 模型入口，同一模型出现在多个 Provider 时会分别计数；本次未发送真实推理请求。
 
 > 未配置密钥：Google Gemini、GitHub Models。 本次目录失败：Cohere、Hugging Face。
 
@@ -44,41 +44,28 @@
 | Zhipu AI                 | 🟢 正常   |          2 | 官方免费型号             |
 | SiliconFlow              | 🟢 正常   |          5 | 免费白名单               |
 | ModelScope               | 🟢 正常   |         16 | 账号免费额度             |
-| NVIDIA NIM               | 🟢 正常   |          9 | 免费开发端点             |
+| NVIDIA NIM               | 🟢 正常   |          8 | 免费开发端点             |
 | GitHub Models            | ⚪ 未接入 |     未接入 | 原型开发额度             |
 | Cohere                   | 🔴 失败   |   暂不可用 | 免费 Trial/Production    |
 | Hugging Face             | 🔴 失败   |   暂不可用 | 实时零价端点             |
-| SenseNova                | 🟢 正常   |          8 | 实时零价模型             |
+| SenseNova                | 🟢 正常   |          7 | 实时零价模型             |
 | Baidu Qianfan            | 🟢 正常   |          0 | 官方免费白名单交集       |
 | Kilo Code                | 🟢 正常   |         12 | 聚合免费模型             |
 | Agnes AI (China)         | 🟢 正常   |          5 | 官方免费模型             |
 | Agnes AI (International) | 🟢 正常   |          6 | 官方免费模型             |
 | OpenCode Zen             | 🟢 正常   |         11 | 实时零价模型（匿名通道） |
 
-[查看稳定的完整免费模型清单](FREE_MODELS.md) · [查看本次目录审计报告](reports/provider-free-model-audit-2026-11-05.md)
+[查看稳定的完整免费模型清单](FREE_MODELS.md) · [查看本次目录审计报告](reports/provider-free-model-audit-2026-11-06.md)
 
 ### 今日变化
 
-与 2026-11-04 相比，在成功比较的 11 个 Provider 中：**新增 6 个，移除 3 个**。
+与 2026-11-05 相比，在成功比较的 11 个 Provider 中：**新增 0 个，移除 2 个**。
 
 <details>
-<summary>查看新增的 6 个模型</summary>
+<summary>查看移除的 2 个模型</summary>
 
-- `sensenova:deepseek-flash`
+- `nvidia:meta/llama-3.2-11b-vision-instruct`
 - `sensenova:deepseek-v4.1-flash`
-- `sensenova:glm-5.3`
-- `sensenova:kimi-k3`
-- `sensenova:sensenova-6.8-flash`
-- `sensenova:sensenova-6.8-flash-lite`
-
-</details>
-
-<details>
-<summary>查看移除的 3 个模型</summary>
-
-- `openrouter:thinkingmachines/inkling-small:free`
-- `openrouter:thinkingmachines/inkling:free`
-- `sensenova:sensenova-6.7-flash-lite`
 
 </details>
 
@@ -144,11 +131,10 @@
 </details>
 
 <details>
-<summary><strong>NVIDIA NIM · 9 个模型</strong></summary>
+<summary><strong>NVIDIA NIM · 8 个模型</strong></summary>
 
 - `nvidia:google/diffusiongemma-26b-a4b-it`
 - `nvidia:google/gemma-4-31b-it`
-- `nvidia:meta/llama-3.2-11b-vision-instruct`
 - `nvidia:meta/llama-3.2-90b-vision-instruct`
 - `nvidia:nvidia/ising-calibration-1.5-31b`
 - `nvidia:nvidia/nemotron-3-nano-omni-30b-a3b-reasoning`
@@ -159,11 +145,10 @@
 </details>
 
 <details>
-<summary><strong>SenseNova · 8 个模型</strong></summary>
+<summary><strong>SenseNova · 7 个模型</strong></summary>
 
 - `sensenova:deepseek-flash`
 - `sensenova:deepseek-v4-flash`
-- `sensenova:deepseek-v4.1-flash`
 - `sensenova:glm-5.2`
 - `sensenova:glm-5.3`
 - `sensenova:kimi-k3`
