@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "date": "2026-11-07",
-  "generatedAt": "2026-11-07T01:59:54.849Z",
-  "reportPath": "reports/provider-free-model-audit-2026-11-07.md",
+  "date": "2026-11-08",
+  "generatedAt": "2026-11-08T01:29:16.971Z",
+  "reportPath": "reports/provider-free-model-audit-2026-11-08.md",
   "totalModels": 86,
   "providers": [
     {
@@ -597,35 +597,9 @@
     }
   ],
   "changes": {
-    "comparedWith": "2026-11-06",
-    "added": [
-      {
-        "provider": "openrouter",
-        "id": "liquid/lfm-3-1.7b:free",
-        "displayName": "LiquidAI: LFM3-1.7B (free)",
-        "contextWindow": 262144
-      },
-      {
-        "provider": "opencode",
-        "id": "opencode:iceman-free",
-        "displayName": "iceman-free",
-        "contextWindow": 262144
-      },
-      {
-        "provider": "opencode",
-        "id": "opencode:inkling-2-small-free",
-        "displayName": "inkling-2-small-free",
-        "contextWindow": 1048576
-      }
-    ],
-    "removed": [
-      {
-        "provider": "opencode",
-        "id": "opencode:pulse-alpha-free",
-        "displayName": "pulse-alpha-free",
-        "contextWindow": 1048576
-      }
-    ],
+    "comparedWith": "2026-11-07",
+    "added": [],
+    "removed": [],
     "comparedProviders": [
       "openrouter",
       "zhipu",
