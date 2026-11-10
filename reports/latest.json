@@ -1,15 +1,15 @@
 {
   "schemaVersion": 2,
-  "date": "2026-11-09",
-  "generatedAt": "2026-11-09T01:45:50.549Z",
-  "reportPath": "reports/provider-free-model-audit-2026-11-09.md",
-  "totalModels": 86,
+  "date": "2026-11-10",
+  "generatedAt": "2026-11-10T04:10:16.504Z",
+  "reportPath": "reports/provider-free-model-audit-2026-11-10.md",
+  "totalModels": 88,
   "providers": [
     {
       "id": "openrouter",
       "display": "OpenRouter",
       "status": "ok",
-      "count": 13,
+      "count": 14,
       "freeType": "零价格模型",
       "freeBasis": "实时目录中仅保留 `:free` 或 `openrouter/free`、输入输出价格均为 0、仅输出文本的模型",
       "risk": "免费账号通常共享日请求额度；上游目录和限额会变",
@@ -73,6 +73,11 @@
           "id": "recursive/flint-v1.0:free",
           "displayName": "Recursive: Flint (free)",
           "contextWindow": 262144
+        },
+        {
+          "id": "thinkingmachines/inkling-2-small:free",
+          "displayName": "Thinking Machines: Inkling 2 Small (free)",
+          "contextWindow": 1048576
         },
         {
           "id": "xingchen-agi/xing4.0-29b-a4b:free",
@@ -528,7 +533,7 @@
       "id": "opencode",
       "display": "OpenCode Zen",
       "status": "ok",
-      "count": 12,
+      "count": 13,
       "freeType": "实时零价模型（匿名通道）",
       "freeBasis": "实时抓取 https://opencode.ai/zen（Zen / Zen Go 双 tier）目录，并以 models.dev 定价 cost=0 判定免费；未配置密钥时回退匿名通道（Bearer public）",
       "risk": "匿名通道与免费层有速率和并发限制；部分免费模型只在 Go tier 提供；上游目录与定价可能随时变化",
@@ -542,11 +547,6 @@
           "id": "opencode:big-pickle",
           "displayName": "big-pickle",
           "contextWindow": 200000
-        },
-        {
-          "id": "opencode:crouton-alpha-free",
-          "displayName": "crouton-alpha-free",
-          "contextWindow": 1048576
         },
         {
           "id": "opencode:deepseek-v4.1-flash-free",
@@ -579,9 +579,19 @@
           "contextWindow": 1048576
         },
         {
+          "id": "opencode:longcat-2.5-free",
+          "displayName": "longcat-2.5-free",
+          "contextWindow": 1000000
+        },
+        {
           "id": "opencode:mimo-v2.6-flash-free",
           "displayName": "mimo-v2.6-flash-free",
           "contextWindow": 200000
+        },
+        {
+          "id": "opencode:minimax-m3.1-flash-free",
+          "displayName": "minimax-m3.1-flash-free",
+          "contextWindow": 1000000
         },
         {
           "id": "opencode:nemotron-3.5-lightning-free",
@@ -597,9 +607,35 @@
     }
   ],
   "changes": {
-    "comparedWith": "2026-11-08",
-    "added": [],
-    "removed": [],
+    "comparedWith": "2026-11-09",
+    "added": [
+      {
+        "provider": "openrouter",
+        "id": "thinkingmachines/inkling-2-small:free",
+        "displayName": "Thinking Machines: Inkling 2 Small (free)",
+        "contextWindow": 1048576
+      },
+      {
+        "provider": "opencode",
+        "id": "opencode:longcat-2.5-free",
+        "displayName": "longcat-2.5-free",
+        "contextWindow": 1000000
+      },
+      {
+        "provider": "opencode",
+        "id": "opencode:minimax-m3.1-flash-free",
+        "displayName": "minimax-m3.1-flash-free",
+        "contextWindow": 1000000
+      }
+    ],
+    "removed": [
+      {
+        "provider": "opencode",
+        "id": "opencode:crouton-alpha-free",
+        "displayName": "crouton-alpha-free",
+        "contextWindow": 1048576
+      }
+    ],
     "comparedProviders": [
       "openrouter",
       "zhipu",
