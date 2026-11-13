@@ -33,18 +33,18 @@
 
 <!-- AUDIT-SUMMARY-START -->
 
-> **目录审计于 2026-11-12（Asia/Shanghai）更新：88 个免费模型入口，覆盖 11/15 个 Provider。** 这里统计的是通过免费规则过滤的 Provider 模型入口，同一模型出现在多个 Provider 时会分别计数；本次未发送真实推理请求。
+> **目录审计于 2026-11-13（Asia/Shanghai）更新：89 个免费模型入口，覆盖 11/15 个 Provider。** 这里统计的是通过免费规则过滤的 Provider 模型入口，同一模型出现在多个 Provider 时会分别计数；本次未发送真实推理请求。
 
 > 未配置密钥：Google Gemini、GitHub Models。 本次目录失败：Cohere、Hugging Face。
 
 | Provider                 | 状态      | 免费模型数 | 免费类型                 |
 | ------------------------ | --------- | ---------: | ------------------------ |
-| OpenRouter               | 🟢 正常   |         14 | 零价格模型               |
+| OpenRouter               | 🟢 正常   |         16 | 零价格模型               |
 | Google Gemini            | ⚪ 未接入 |     未接入 | 账号 Free Tier           |
 | Zhipu AI                 | 🟢 正常   |          2 | 官方免费型号             |
 | SiliconFlow              | 🟢 正常   |          5 | 免费白名单               |
 | ModelScope               | 🟢 正常   |         16 | 账号免费额度             |
-| NVIDIA NIM               | 🟢 正常   |          8 | 免费开发端点             |
+| NVIDIA NIM               | 🟢 正常   |          7 | 免费开发端点             |
 | GitHub Models            | ⚪ 未接入 |     未接入 | 原型开发额度             |
 | Cohere                   | 🔴 失败   |   暂不可用 | 免费 Trial/Production    |
 | Hugging Face             | 🔴 失败   |   暂不可用 | 实时零价端点             |
@@ -55,24 +55,33 @@
 | Agnes AI (International) | 🟢 正常   |          6 | 官方免费模型             |
 | OpenCode Zen             | 🟢 正常   |         13 | 实时零价模型（匿名通道） |
 
-[查看稳定的完整免费模型清单](FREE_MODELS.md) · [查看本次目录审计报告](reports/provider-free-model-audit-2026-11-12.md)
+[查看稳定的完整免费模型清单](FREE_MODELS.md) · [查看本次目录审计报告](reports/provider-free-model-audit-2026-11-13.md)
 
 ### 今日变化
 
-与 2026-11-11 相比，在成功比较的 11 个 Provider 中：**新增 1 个，移除 0 个**。
+与 2026-11-12 相比，在成功比较的 11 个 Provider 中：**新增 2 个，移除 1 个**。
 
 <details>
-<summary>查看新增的 1 个模型</summary>
+<summary>查看新增的 2 个模型</summary>
 
-- `openrouter:baidu/ernie-5.5-flash-preview:free`
+- `openrouter:apodex/apodex-1.1-mini:free`
+- `openrouter:particle-ai/particle-1:free`
+
+</details>
+
+<details>
+<summary>查看移除的 1 个模型</summary>
+
+- `nvidia:google/diffusiongemma-26b-a4b-it`
 
 </details>
 
 ### 展开完整模型列表
 
 <details>
-<summary><strong>OpenRouter · 14 个模型</strong></summary>
+<summary><strong>OpenRouter · 16 个模型</strong></summary>
 
+- `openrouter:apodex/apodex-1.1-mini:free` — Apodex: Apodex 1.1 Mini (free)
 - `openrouter:baidu/ernie-5.5-flash-preview:free` — Baidu: ERNIE-5.5-Flash-Preview (free)
 - `openrouter:cohere/north-mini-code:free` — Cohere: North Mini Code (free)
 - `openrouter:dots-studio/dots-3-note-preview:free` — Dots Studio: Dots3-Note Preview (free)
@@ -85,6 +94,7 @@
 - `openrouter:nvidia/nemotron-3.5-lightning:free` — NVIDIA: Nemotron 3.5 Lightning (free)
 - `openrouter:nvidia/nemotron-3.5-super-vl:free` — NVIDIA: Nemotron 3.5 Super VL (free)
 - `openrouter:openrouter/free` — Free Models Router
+- `openrouter:particle-ai/particle-1:free` — Particle AI: Particle-1 (free)
 - `openrouter:recursive/flint-v1.0:free` — Recursive: Flint (free)
 - `openrouter:thinkingmachines/inkling-2-small:free` — Thinking Machines: Inkling 2 Small (free)
 
@@ -132,9 +142,8 @@
 </details>
 
 <details>
-<summary><strong>NVIDIA NIM · 8 个模型</strong></summary>
+<summary><strong>NVIDIA NIM · 7 个模型</strong></summary>
 
-- `nvidia:google/diffusiongemma-26b-a4b-it`
 - `nvidia:google/gemma-4-31b-it`
 - `nvidia:meta/llama-3.2-90b-vision-instruct`
 - `nvidia:nvidia/ising-calibration-1.5-31b`
