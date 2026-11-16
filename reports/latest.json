@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
-  "date": "2026-11-15",
-  "generatedAt": "2026-11-15T01:58:43.299Z",
-  "reportPath": "reports/provider-free-model-audit-2026-11-15.md",
-  "totalModels": 88,
+  "date": "2026-11-16",
+  "generatedAt": "2026-11-16T02:13:38.102Z",
+  "reportPath": "reports/provider-free-model-audit-2026-11-16.md",
+  "totalModels": 87,
   "providers": [
     {
       "id": "openrouter",
@@ -253,7 +253,7 @@
       "id": "nvidia",
       "display": "NVIDIA NIM",
       "status": "ok",
-      "count": 7,
+      "count": 6,
       "freeType": "免费开发端点",
       "freeBasis": "只保留审核过的 build.nvidia.com 免费开发端点",
       "risk": "面向学习、开发和原型，限速且不代表生产环境永久免费",
@@ -276,11 +276,6 @@
         {
           "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
           "displayName": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
-          "contextWindow": null
-        },
-        {
-          "id": "nvidia/nemotron-3-super-120b-a12b",
-          "displayName": "nvidia/nemotron-3-super-120b-a12b",
           "contextWindow": null
         },
         {
@@ -607,9 +602,16 @@
     }
   ],
   "changes": {
-    "comparedWith": "2026-11-14",
+    "comparedWith": "2026-11-15",
     "added": [],
-    "removed": [],
+    "removed": [
+      {
+        "provider": "nvidia",
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "displayName": "nvidia/nemotron-3-super-120b-a12b",
+        "contextWindow": null
+      }
+    ],
     "comparedProviders": [
       "openrouter",
       "zhipu",
