@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
-  "date": "2026-11-18",
-  "generatedAt": "2026-11-18T03:44:19.879Z",
-  "reportPath": "reports/provider-free-model-audit-2026-11-18.md",
-  "totalModels": 87,
+  "date": "2026-11-19",
+  "generatedAt": "2026-11-19T03:37:39.982Z",
+  "reportPath": "reports/provider-free-model-audit-2026-11-19.md",
+  "totalModels": 85,
   "providers": [
     {
       "id": "openrouter",
@@ -253,7 +253,7 @@
       "id": "nvidia",
       "display": "NVIDIA NIM",
       "status": "ok",
-      "count": 5,
+      "count": 4,
       "freeType": "免费开发端点",
       "freeBasis": "只保留审核过的 build.nvidia.com 免费开发端点",
       "risk": "面向学习、开发和原型，限速且不代表生产环境永久免费",
@@ -276,11 +276,6 @@
         {
           "id": "nvidia/nemotron-3-ultra-550b-a55b",
           "displayName": "nvidia/nemotron-3-ultra-550b-a55b",
-          "contextWindow": null
-        },
-        {
-          "id": "openai/gpt-oss-20b",
-          "displayName": "openai/gpt-oss-20b",
           "contextWindow": null
         }
       ]
@@ -325,7 +320,7 @@
       "id": "sensenova",
       "display": "SenseNova",
       "status": "ok",
-      "count": 7,
+      "count": 6,
       "freeType": "实时零价模型",
       "freeBasis": "实时目录中输入、输出价格都为 0 的文本模型；接口不可用时使用审核过的免费清单",
       "risk": "免费配额和型号可能变化；当前网关只处理文本，即使模型本身支持多模态",
@@ -338,11 +333,6 @@
         {
           "id": "deepseek-v4-flash",
           "displayName": "deepseek-v4-flash",
-          "contextWindow": null
-        },
-        {
-          "id": "glm-5.2",
-          "displayName": "glm-5.2",
           "contextWindow": null
         },
         {
@@ -555,11 +545,6 @@
           "contextWindow": 262144
         },
         {
-          "id": "opencode:glm-5.3-flash-free",
-          "displayName": "glm-5.3-flash-free",
-          "contextWindow": 200000
-        },
-        {
           "id": "opencode:hy4-flash-free",
           "displayName": "hy4-flash-free",
           "contextWindow": 1048576
@@ -598,20 +583,52 @@
           "id": "opencode:nemotron-3.5-super-vl-free",
           "displayName": "nemotron-3.5-super-vl-free",
           "contextWindow": 1048576
+        },
+        {
+          "id": "opencode:tidepool-alpha-free",
+          "displayName": "tidepool-alpha-free",
+          "contextWindow": 1048576
         }
       ]
     }
   ],
   "changes": {
-    "comparedWith": "2026-11-17",
-    "added": [],
-    "removed": [],
+    "comparedWith": "2026-11-18",
+    "added": [
+      {
+        "provider": "opencode",
+        "id": "opencode:tidepool-alpha-free",
+        "displayName": "tidepool-alpha-free",
+        "contextWindow": 1048576
+      }
+    ],
+    "removed": [
+      {
+        "provider": "nvidia",
+        "id": "openai/gpt-oss-20b",
+        "displayName": "openai/gpt-oss-20b",
+        "contextWindow": null
+      },
+      {
+        "provider": "sensenova",
+        "id": "glm-5.2",
+        "displayName": "glm-5.2",
+        "contextWindow": null
+      },
+      {
+        "provider": "opencode",
+        "id": "opencode:glm-5.3-flash-free",
+        "displayName": "glm-5.3-flash-free",
+        "contextWindow": 200000
+      }
+    ],
     "comparedProviders": [
       "openrouter",
       "zhipu",
       "siliconflow",
       "modelscope",
       "nvidia",
+      "huggingface",
       "sensenova",
       "qianfan",
       "kilo",
