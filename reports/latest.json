@@ -1,15 +1,15 @@
 {
   "schemaVersion": 2,
-  "date": "2026-11-19",
-  "generatedAt": "2026-11-19T03:37:39.982Z",
-  "reportPath": "reports/provider-free-model-audit-2026-11-19.md",
-  "totalModels": 85,
+  "date": "2026-11-20",
+  "generatedAt": "2026-11-20T03:27:23.348Z",
+  "reportPath": "reports/provider-free-model-audit-2026-11-20.md",
+  "totalModels": 81,
   "providers": [
     {
       "id": "openrouter",
       "display": "OpenRouter",
       "status": "ok",
-      "count": 15,
+      "count": 13,
       "freeType": "零价格模型",
       "freeBasis": "实时目录中仅保留 `:free` 或 `openrouter/free`、输入输出价格均为 0、仅输出文本的模型",
       "risk": "免费账号通常共享日请求额度；上游目录和限额会变",
@@ -18,11 +18,6 @@
           "id": "baidu/ernie-5.5-flash-preview:free",
           "displayName": "Baidu: ERNIE-5.5-Flash-Preview (free)",
           "contextWindow": 1024000
-        },
-        {
-          "id": "cohere/north-mini-code:free",
-          "displayName": "Cohere: North Mini Code (free)",
-          "contextWindow": 256000
         },
         {
           "id": "dots-studio/dots-3-note-preview:free",
@@ -83,11 +78,6 @@
           "id": "recursive/flint-v1.0:free",
           "displayName": "Recursive: Flint (free)",
           "contextWindow": 262144
-        },
-        {
-          "id": "thinkingmachines/inkling-2-small:free",
-          "displayName": "Thinking Machines: Inkling 2 Small (free)",
-          "contextWindow": 1048576
         }
       ]
     },
@@ -371,16 +361,11 @@
       "id": "kilo",
       "display": "Kilo Code",
       "status": "ok",
-      "count": 12,
+      "count": 11,
       "freeType": "聚合免费模型",
       "freeBasis": "白名单 + 零价格双重验证，覆盖 17+ 个免费模型",
       "risk": "免费层约 200 请求/小时；部分模型与 OpenRouter 重叠",
       "models": [
-        {
-          "id": "cohere/north-mini-code:free",
-          "displayName": "Cohere: North Mini Code (free)",
-          "contextWindow": 256000
-        },
         {
           "id": "dots-studio/dots-3-note-preview:free",
           "displayName": "Dots Studio: Dots3-Note Preview (free)",
@@ -519,7 +504,7 @@
       "id": "opencode",
       "display": "OpenCode Zen",
       "status": "ok",
-      "count": 13,
+      "count": 12,
       "freeType": "实时零价模型（匿名通道）",
       "freeBasis": "实时抓取 https://opencode.ai/zen（Zen / Zen Go 双 tier）目录，并以 models.dev 定价 cost=0 判定免费；未配置密钥时回退匿名通道（Bearer public）",
       "risk": "匿名通道与免费层有速率和并发限制；部分免费模型只在 Go tier 提供；上游目录与定价可能随时变化",
@@ -560,11 +545,6 @@
           "contextWindow": 262144
         },
         {
-          "id": "opencode:inkling-2-small-free",
-          "displayName": "inkling-2-small-free",
-          "contextWindow": 1048576
-        },
-        {
           "id": "opencode:longcat-2.5-free",
           "displayName": "longcat-2.5-free",
           "contextWindow": 1000000
@@ -593,33 +573,32 @@
     }
   ],
   "changes": {
-    "comparedWith": "2026-11-18",
-    "added": [
-      {
-        "provider": "opencode",
-        "id": "opencode:tidepool-alpha-free",
-        "displayName": "tidepool-alpha-free",
-        "contextWindow": 1048576
-      }
-    ],
+    "comparedWith": "2026-11-19",
+    "added": [],
     "removed": [
       {
-        "provider": "nvidia",
-        "id": "openai/gpt-oss-20b",
-        "displayName": "openai/gpt-oss-20b",
-        "contextWindow": null
+        "provider": "openrouter",
+        "id": "cohere/north-mini-code:free",
+        "displayName": "Cohere: North Mini Code (free)",
+        "contextWindow": 256000
       },
       {
-        "provider": "sensenova",
-        "id": "glm-5.2",
-        "displayName": "glm-5.2",
-        "contextWindow": null
+        "provider": "openrouter",
+        "id": "thinkingmachines/inkling-2-small:free",
+        "displayName": "Thinking Machines: Inkling 2 Small (free)",
+        "contextWindow": 1048576
+      },
+      {
+        "provider": "kilo",
+        "id": "cohere/north-mini-code:free",
+        "displayName": "Cohere: North Mini Code (free)",
+        "contextWindow": 256000
       },
       {
         "provider": "opencode",
-        "id": "opencode:glm-5.3-flash-free",
-        "displayName": "glm-5.3-flash-free",
-        "contextWindow": 200000
+        "id": "opencode:inkling-2-small-free",
+        "displayName": "inkling-2-small-free",
+        "contextWindow": 1048576
       }
     ],
     "comparedProviders": [
