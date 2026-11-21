@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "date": "2026-11-20",
-  "generatedAt": "2026-11-20T03:27:23.348Z",
-  "reportPath": "reports/provider-free-model-audit-2026-11-20.md",
+  "date": "2026-11-21",
+  "generatedAt": "2026-11-21T03:15:38.975Z",
+  "reportPath": "reports/provider-free-model-audit-2026-11-21.md",
   "totalModels": 81,
   "providers": [
     {
@@ -573,34 +573,9 @@
     }
   ],
   "changes": {
-    "comparedWith": "2026-11-19",
+    "comparedWith": "2026-11-20",
     "added": [],
-    "removed": [
-      {
-        "provider": "openrouter",
-        "id": "cohere/north-mini-code:free",
-        "displayName": "Cohere: North Mini Code (free)",
-        "contextWindow": 256000
-      },
-      {
-        "provider": "openrouter",
-        "id": "thinkingmachines/inkling-2-small:free",
-        "displayName": "Thinking Machines: Inkling 2 Small (free)",
-        "contextWindow": 1048576
-      },
-      {
-        "provider": "kilo",
-        "id": "cohere/north-mini-code:free",
-        "displayName": "Cohere: North Mini Code (free)",
-        "contextWindow": 256000
-      },
-      {
-        "provider": "opencode",
-        "id": "opencode:inkling-2-small-free",
-        "displayName": "inkling-2-small-free",
-        "contextWindow": 1048576
-      }
-    ],
+    "removed": [],
     "comparedProviders": [
       "openrouter",
       "zhipu",
