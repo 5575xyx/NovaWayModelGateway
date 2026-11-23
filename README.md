@@ -33,7 +33,7 @@
 
 <!-- AUDIT-SUMMARY-START -->
 
-> **目录审计于 2026-11-22（Asia/Shanghai）更新：79 个免费模型入口，覆盖 12/15 个 Provider。** 这里统计的是通过免费规则过滤的 Provider 模型入口，同一模型出现在多个 Provider 时会分别计数；本次未发送真实推理请求。
+> **目录审计于 2026-11-23（Asia/Shanghai）更新：78 个免费模型入口，覆盖 12/15 个 Provider。** 这里统计的是通过免费规则过滤的 Provider 模型入口，同一模型出现在多个 Provider 时会分别计数；本次未发送真实推理请求。
 
 > 未配置密钥：Google Gemini、GitHub Models。 本次目录失败：Cohere。
 
@@ -53,19 +53,18 @@
 | Kilo Code                | 🟢 正常   |         10 | 聚合免费模型             |
 | Agnes AI (China)         | 🟢 正常   |          5 | 官方免费模型             |
 | Agnes AI (International) | 🟢 正常   |          6 | 官方免费模型             |
-| OpenCode Zen             | 🟢 正常   |         12 | 实时零价模型（匿名通道） |
+| OpenCode Zen             | 🟢 正常   |         11 | 实时零价模型（匿名通道） |
 
-[查看稳定的完整免费模型清单](FREE_MODELS.md) · [查看本次目录审计报告](reports/provider-free-model-audit-2026-11-22.md)
+[查看稳定的完整免费模型清单](FREE_MODELS.md) · [查看本次目录审计报告](reports/provider-free-model-audit-2026-11-23.md)
 
 ### 今日变化
 
-与 2026-11-21 相比，在成功比较的 12 个 Provider 中：**新增 0 个，移除 2 个**。
+与 2026-11-22 相比，在成功比较的 12 个 Provider 中：**新增 0 个，移除 1 个**。
 
 <details>
-<summary>查看移除的 2 个模型</summary>
+<summary>查看移除的 1 个模型</summary>
 
-- `openrouter:dots-studio/dots-3-note-preview:free`
-- `kilo:dots-studio/dots-3-note-preview:free`
+- `opencode:opencode:longcat-2.5-free`
 
 </details>
 
@@ -206,7 +205,7 @@
 </details>
 
 <details>
-<summary><strong>OpenCode Zen · 12 个模型</strong></summary>
+<summary><strong>OpenCode Zen · 11 个模型</strong></summary>
 
 - `opencode:opencode:beam-free` — beam-free
 - `opencode:opencode:big-pickle` — big-pickle
@@ -215,7 +214,6 @@
 - `opencode:opencode:hy4-flash-free` — hy4-flash-free
 - `opencode:opencode:iceman-contributor-free` — iceman-contributor-free
 - `opencode:opencode:iceman-free` — iceman-free
-- `opencode:opencode:longcat-2.5-free` — longcat-2.5-free
 - `opencode:opencode:mimo-v2.6-flash-free` — mimo-v2.6-flash-free
 - `opencode:opencode:nemotron-3.5-lightning-free` — nemotron-3.5-lightning-free
 - `opencode:opencode:nemotron-3.5-super-vl-free` — nemotron-3.5-super-vl-free

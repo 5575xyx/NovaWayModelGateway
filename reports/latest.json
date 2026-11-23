@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
-  "date": "2026-11-22",
-  "generatedAt": "2026-11-22T02:18:29.735Z",
-  "reportPath": "reports/provider-free-model-audit-2026-11-22.md",
-  "totalModels": 79,
+  "date": "2026-11-23",
+  "generatedAt": "2026-11-23T02:53:22.392Z",
+  "reportPath": "reports/provider-free-model-audit-2026-11-23.md",
+  "totalModels": 78,
   "providers": [
     {
       "id": "openrouter",
@@ -494,7 +494,7 @@
       "id": "opencode",
       "display": "OpenCode Zen",
       "status": "ok",
-      "count": 12,
+      "count": 11,
       "freeType": "实时零价模型（匿名通道）",
       "freeBasis": "实时抓取 https://opencode.ai/zen（Zen / Zen Go 双 tier）目录，并以 models.dev 定价 cost=0 判定免费；未配置密钥时回退匿名通道（Bearer public）",
       "risk": "匿名通道与免费层有速率和并发限制；部分免费模型只在 Go tier 提供；上游目录与定价可能随时变化",
@@ -535,11 +535,6 @@
           "contextWindow": 262144
         },
         {
-          "id": "opencode:longcat-2.5-free",
-          "displayName": "longcat-2.5-free",
-          "contextWindow": 1000000
-        },
-        {
           "id": "opencode:mimo-v2.6-flash-free",
           "displayName": "mimo-v2.6-flash-free",
           "contextWindow": 200000
@@ -563,20 +558,14 @@
     }
   ],
   "changes": {
-    "comparedWith": "2026-11-21",
+    "comparedWith": "2026-11-22",
     "added": [],
     "removed": [
       {
-        "provider": "openrouter",
-        "id": "dots-studio/dots-3-note-preview:free",
-        "displayName": "Dots Studio: Dots3-Note Preview (free)",
-        "contextWindow": 512000
-      },
-      {
-        "provider": "kilo",
-        "id": "dots-studio/dots-3-note-preview:free",
-        "displayName": "Dots Studio: Dots3-Note Preview (free)",
-        "contextWindow": 512000
+        "provider": "opencode",
+        "id": "opencode:longcat-2.5-free",
+        "displayName": "longcat-2.5-free",
+        "contextWindow": 1000000
       }
     ],
     "comparedProviders": [
