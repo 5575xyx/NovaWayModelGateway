@@ -33,63 +33,49 @@
 
 <!-- AUDIT-SUMMARY-START -->
 
-> **目录审计于 2026-11-24（Asia/Shanghai）更新：78 个免费模型入口，覆盖 12/15 个 Provider。** 这里统计的是通过免费规则过滤的 Provider 模型入口，同一模型出现在多个 Provider 时会分别计数；本次未发送真实推理请求。
+> **目录审计于 2026-11-25（Asia/Shanghai）更新：74 个免费模型入口，覆盖 11/15 个 Provider。** 这里统计的是通过免费规则过滤的 Provider 模型入口，同一模型出现在多个 Provider 时会分别计数；本次未发送真实推理请求。
 
-> 未配置密钥：Google Gemini、GitHub Models。 本次目录失败：Cohere。
+> 未配置密钥：Google Gemini、GitHub Models。 本次目录失败：Cohere、Hugging Face。
 
 | Provider                 | 状态      | 免费模型数 | 免费类型                 |
 | ------------------------ | --------- | ---------: | ------------------------ |
-| OpenRouter               | 🟢 正常   |         13 | 零价格模型               |
+| OpenRouter               | 🟢 正常   |         12 | 零价格模型               |
 | Google Gemini            | ⚪ 未接入 |     未接入 | 账号 Free Tier           |
 | Zhipu AI                 | 🟢 正常   |          2 | 官方免费型号             |
 | SiliconFlow              | 🟢 正常   |          5 | 免费白名单               |
 | ModelScope               | 🟢 正常   |         16 | 账号免费额度             |
-| NVIDIA NIM               | 🟢 正常   |          4 | 免费开发端点             |
+| NVIDIA NIM               | 🟢 正常   |          3 | 免费开发端点             |
 | GitHub Models            | ⚪ 未接入 |     未接入 | 原型开发额度             |
 | Cohere                   | 🔴 失败   |   暂不可用 | 免费 Trial/Production    |
-| Hugging Face             | 🟢 正常   |          1 | 实时零价端点             |
+| Hugging Face             | 🔴 失败   |   暂不可用 | 实时零价端点             |
 | SenseNova                | 🟢 正常   |          3 | 实时零价模型             |
 | Baidu Qianfan            | 🟢 正常   |          0 | 官方免费白名单交集       |
-| Kilo Code                | 🟢 正常   |         11 | 聚合免费模型             |
+| Kilo Code                | 🟢 正常   |         10 | 聚合免费模型             |
 | Agnes AI (China)         | 🟢 正常   |          5 | 官方免费模型             |
 | Agnes AI (International) | 🟢 正常   |          6 | 官方免费模型             |
 | OpenCode Zen             | 🟢 正常   |         12 | 实时零价模型（匿名通道） |
 
-[查看稳定的完整免费模型清单](FREE_MODELS.md) · [查看本次目录审计报告](reports/provider-free-model-audit-2026-11-24.md)
+[查看稳定的完整免费模型清单](FREE_MODELS.md) · [查看本次目录审计报告](reports/provider-free-model-audit-2026-11-25.md)
 
 ### 今日变化
 
-与 2026-11-23 相比，在成功比较的 12 个 Provider 中：**新增 5 个，移除 5 个**。
+与 2026-11-24 相比，在成功比较的 11 个 Provider 中：**新增 0 个，移除 3 个**。
 
 <details>
-<summary>查看新增的 5 个模型</summary>
+<summary>查看移除的 3 个模型</summary>
 
 - `openrouter:dots-studio/dots-3-note-preview:free`
-- `sensenova:glm-5.2`
-- `sensenova:sensenova-6.7-flash-lite`
+- `nvidia:google/gemma-4-31b-it`
 - `kilo:dots-studio/dots-3-note-preview:free`
-- `opencode:opencode:hungerg-free`
-
-</details>
-
-<details>
-<summary>查看移除的 5 个模型</summary>
-
-- `sensenova:deepseek-flash`
-- `sensenova:glm-5.3`
-- `sensenova:kimi-k3`
-- `sensenova:sensenova-6.8-flash`
-- `sensenova:sensenova-6.8-flash-lite`
 
 </details>
 
 ### 展开完整模型列表
 
 <details>
-<summary><strong>OpenRouter · 13 个模型</strong></summary>
+<summary><strong>OpenRouter · 12 个模型</strong></summary>
 
 - `openrouter:baidu/ernie-5.5-flash-preview:free` — Baidu: ERNIE-5.5-Flash-Preview (free)
-- `openrouter:dots-studio/dots-3-note-preview:free` — Dots Studio: Dots3-Note Preview (free)
 - `openrouter:google/gemma-4-26b-a4b-it:free` — Google: Gemma 4 26B A4B (free)
 - `openrouter:google/gemma-4-31b-it:free` — Google: Gemma 4 31B (free)
 - `openrouter:inclusionai/ling-3.2-flash:free` — inclusionAI: Ling 3.2 Flash (free)
@@ -146,19 +132,11 @@
 </details>
 
 <details>
-<summary><strong>NVIDIA NIM · 4 个模型</strong></summary>
+<summary><strong>NVIDIA NIM · 3 个模型</strong></summary>
 
-- `nvidia:google/gemma-4-31b-it`
 - `nvidia:nvidia/ising-calibration-1.5-31b`
 - `nvidia:nvidia/nemotron-3-nano-omni-30b-a3b-reasoning`
 - `nvidia:nvidia/nemotron-3-ultra-550b-a55b`
-
-</details>
-
-<details>
-<summary><strong>Hugging Face · 1 个模型</strong></summary>
-
-- `huggingface:deepseek-ai/DeepSeek-V4.1-Flash-1017`
 
 </details>
 
@@ -179,9 +157,8 @@
 </details>
 
 <details>
-<summary><strong>Kilo Code · 11 个模型</strong></summary>
+<summary><strong>Kilo Code · 10 个模型</strong></summary>
 
-- `kilo:dots-studio/dots-3-note-preview:free` — Dots Studio: Dots3-Note Preview (free)
 - `kilo:google/lyria-3-clip-preview` — Google: Lyria 3 Clip Preview
 - `kilo:google/lyria-3-pro-preview` — Google: Lyria 3 Pro Preview
 - `kilo:kilo-auto/free` — Auto Free
