@@ -33,7 +33,7 @@
 
 <!-- AUDIT-SUMMARY-START -->
 
-> **目录审计于 2026-11-25（Asia/Shanghai）更新：74 个免费模型入口，覆盖 11/15 个 Provider。** 这里统计的是通过免费规则过滤的 Provider 模型入口，同一模型出现在多个 Provider 时会分别计数；本次未发送真实推理请求。
+> **目录审计于 2026-11-26（Asia/Shanghai）更新：74 个免费模型入口，覆盖 11/15 个 Provider。** 这里统计的是通过免费规则过滤的 Provider 模型入口，同一模型出现在多个 Provider 时会分别计数；本次未发送真实推理请求。
 
 > 未配置密钥：Google Gemini、GitHub Models。 本次目录失败：Cohere、Hugging Face。
 
@@ -55,18 +55,23 @@
 | Agnes AI (International) | 🟢 正常   |          6 | 官方免费模型             |
 | OpenCode Zen             | 🟢 正常   |         12 | 实时零价模型（匿名通道） |
 
-[查看稳定的完整免费模型清单](FREE_MODELS.md) · [查看本次目录审计报告](reports/provider-free-model-audit-2026-11-25.md)
+[查看稳定的完整免费模型清单](FREE_MODELS.md) · [查看本次目录审计报告](reports/provider-free-model-audit-2026-11-26.md)
 
 ### 今日变化
 
-与 2026-11-24 相比，在成功比较的 11 个 Provider 中：**新增 0 个，移除 3 个**。
+与 2026-11-25 相比，在成功比较的 11 个 Provider 中：**新增 1 个，移除 1 个**。
 
 <details>
-<summary>查看移除的 3 个模型</summary>
+<summary>查看新增的 1 个模型</summary>
 
-- `openrouter:dots-studio/dots-3-note-preview:free`
-- `nvidia:google/gemma-4-31b-it`
-- `kilo:dots-studio/dots-3-note-preview:free`
+- `opencode:opencode:seaglass-alpha-free`
+
+</details>
+
+<details>
+<summary>查看移除的 1 个模型</summary>
+
+- `opencode:opencode:tidepool-alpha-free`
 
 </details>
 
@@ -209,7 +214,7 @@
 - `opencode:opencode:mimo-v2.6-flash-free` — mimo-v2.6-flash-free
 - `opencode:opencode:nemotron-3.5-lightning-free` — nemotron-3.5-lightning-free
 - `opencode:opencode:nemotron-3.5-super-vl-free` — nemotron-3.5-super-vl-free
-- `opencode:opencode:tidepool-alpha-free` — tidepool-alpha-free
+- `opencode:opencode:seaglass-alpha-free` — seaglass-alpha-free
 
 </details>
 

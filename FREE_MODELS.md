@@ -2,21 +2,23 @@
 
 <!-- 此文件由 scripts/update-readme-audit.mjs 自动生成，请勿手动编辑。 -->
 
-> 最近目录审计：**2026-11-25（Asia/Shanghai）** · **74** 个免费模型入口 · **11/15** 个 Provider 正常。
+> 最近目录审计：**2026-11-26（Asia/Shanghai）** · **74** 个免费模型入口 · **11/15** 个 Provider 正常。
 
-[返回项目 README](README.md) · [查看本次目录审计报告](reports/provider-free-model-audit-2026-11-25.md)
+[返回项目 README](README.md) · [查看本次目录审计报告](reports/provider-free-model-audit-2026-11-26.md)
 
 这份列表每天由 GitHub Actions 通过各 Provider 的模型目录接口刷新，并应用 FreeModelFinder 核心层的免费规则。它不执行真实推理，不代表无限额度、永久免费或生产级可用。同一上游模型通过多个 Provider 提供时会分别计数，因为对应的账号资格、额度和 Gateway 模型 ID 不同。
 
 ## 今日变化
 
-与 2026-11-24 相比，在成功比较的 11 个 Provider 中：**新增 0 个，移除 3 个**。
+与 2026-11-25 相比，在成功比较的 11 个 Provider 中：**新增 1 个，移除 1 个**。
+
+### 新增
+
+- `opencode:opencode:seaglass-alpha-free`
 
 ### 移除
 
-- `openrouter:dots-studio/dots-3-note-preview:free`
-- `nvidia:google/gemma-4-31b-it`
-- `kilo:dots-studio/dots-3-note-preview:free`
+- `opencode:opencode:tidepool-alpha-free`
 
 ## Provider 汇总
 
@@ -257,4 +259,4 @@
 | `opencode:opencode:mimo-v2.6-flash-free`        | mimo-v2.6-flash-free        |       200K |
 | `opencode:opencode:nemotron-3.5-lightning-free` | nemotron-3.5-lightning-free |     262.1K |
 | `opencode:opencode:nemotron-3.5-super-vl-free`  | nemotron-3.5-super-vl-free  |         1M |
-| `opencode:opencode:tidepool-alpha-free`         | tidepool-alpha-free         |         1M |
+| `opencode:opencode:seaglass-alpha-free`         | seaglass-alpha-free         |         1M |

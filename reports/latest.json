@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "date": "2026-11-25",
-  "generatedAt": "2026-11-25T04:56:10.909Z",
-  "reportPath": "reports/provider-free-model-audit-2026-11-25.md",
+  "date": "2026-11-26",
+  "generatedAt": "2026-11-26T04:12:10.039Z",
+  "reportPath": "reports/provider-free-model-audit-2026-11-26.md",
   "totalModels": 74,
   "providers": [
     {
@@ -529,34 +529,29 @@
           "contextWindow": 1048576
         },
         {
-          "id": "opencode:tidepool-alpha-free",
-          "displayName": "tidepool-alpha-free",
+          "id": "opencode:seaglass-alpha-free",
+          "displayName": "seaglass-alpha-free",
           "contextWindow": 1048576
         }
       ]
     }
   ],
   "changes": {
-    "comparedWith": "2026-11-24",
-    "added": [],
+    "comparedWith": "2026-11-25",
+    "added": [
+      {
+        "provider": "opencode",
+        "id": "opencode:seaglass-alpha-free",
+        "displayName": "seaglass-alpha-free",
+        "contextWindow": 1048576
+      }
+    ],
     "removed": [
       {
-        "provider": "openrouter",
-        "id": "dots-studio/dots-3-note-preview:free",
-        "displayName": "Dots Studio: Dots3-Note Preview (free)",
-        "contextWindow": 512000
-      },
-      {
-        "provider": "nvidia",
-        "id": "google/gemma-4-31b-it",
-        "displayName": "google/gemma-4-31b-it",
-        "contextWindow": null
-      },
-      {
-        "provider": "kilo",
-        "id": "dots-studio/dots-3-note-preview:free",
-        "displayName": "Dots Studio: Dots3-Note Preview (free)",
-        "contextWindow": 512000
+        "provider": "opencode",
+        "id": "opencode:tidepool-alpha-free",
+        "displayName": "tidepool-alpha-free",
+        "contextWindow": 1048576
       }
     ],
     "comparedProviders": [
